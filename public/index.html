@@ -7,25 +7,36 @@
     <title>bookmark-landing-page</title>
 
     <link rel="stylesheet" href="../src/styles/style.css">
-    <script src="../src/js/main.js"></script>
+    <script src="../src/js/main.js" defer></script>
 
 </head>
 <body>
     <header>
         <div class="container"></div>
-            <div class="logo"> 
-                <a href="" target="_blank">
-                <img src="../src/assets/images/logo-bookmark.svg" alt="bookmark"> 
-            </div>
-            <button class="open-menu">abrir</button>
-            <nav class="nav"> 
-                <button class="close-menu"><img src="../src/assets/images/icon-close.svg"></button>
+            <img class="logo" src="../src/assets/images/logo-bookmark.svg" alt="bookmark"> 
+            
+            <button class="open-menu" id="open1">
+                <img src="../src/assets/images/icon-hamburger.svg">
+            </button>
+            
+            <nav class="nav" id="nav"> 
+                <div class="logo-boton">
+                    <img src="../src/assets/images/logo-bookmark.svg" alt="bookmark">
+                    <button class="close-menu" id="close1"><img src="../src/assets/images/icon-close.svg"></button>
+                </div>
                 <ul class="nav-list">
                     <li><a href="">FEATURES</a></li>
                     <li><a href="">PRICING</a></li>
                     <li><a href="">CONTACT</a></li>
+                    <li><a href="">
+                        <button class="login">LOGIN</button>
+                    </a></li>    
                 </ul>
-                <button class="login">LOGIN</button>
+
+                <div class="rr-ss">
+                    <button class="facebook"><img src="../src/assets/images/icon-facebook.svg"></button>
+                    <button class="twitter"><img src="../src/assets/images/icon-twitter.svg"></button>
+                </div>
             </nav>
 
         </div>
@@ -34,53 +45,55 @@
     <main>
 
         <section id="simple-bookmark-manager">
-        <p>.img1</p>
-        <h1>A Simple Bookmark
-            <br>Manager
-        </h1>
-        <h3>
-            A clean and simple interface to organize 
-            <br> your favorite websites.Open a new 
-            <br>browser tab and see your sites load 
-            <br>instantly. Try it for free.
-        </h3>
-        <div class="boton">
-            <button><p>.boton1</p></button>
-            <button><p>.boton2</p></button>
-        </div>
-        </section>
+            <div class="img-container">
+                <img class="img" src="../src/assets/images/illustration-features-tab-1.svg">
+            </div>
+            <h1>A Simple Bookmark
+                <br>Manager
+            </h1>
+            <h3>
+                A clean and simple interface to organize 
+                <br> your favorite websites.Open a new 
+                <br>browser tab and see your sites load 
+                <br>instantly. Try it for free.
+            </h3>
+            <div class="boton">
+                <button><p>.boton1</p></button>
+                <button><p>.boton2</p></button>
+            </div>
+            </section>
 
-        <section id="features">
-        <h1>Features</h1>
-        <h3>
-            Our aim to make it quick and easy for you
-            <br>to acces your favorite websites. your
-            <br>bookmarks sync between your devices so
-            <br>you can acces them on the go.
-        </h3>
-        <details>
-            <summary>Simple Bookmarking</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    <br>Nisi perspiciatis eos dolorum ipsum vel aliquid, 
-                    <br>cumque consequuntur quaerat repudiandae amet voluptates 
-                    <br>ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
-                </p>
-        </details>
-        <details>
-            <summary>Speedy Searching</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    <br>Nisi perspiciatis eos dolorum ipsum vel aliquid, 
-                    <br>cumque consequuntur quaerat repudiandae amet voluptates 
-                    <br>ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
-                </p>
-        </details>
-        <details>  
-            <summary>Easy Sharing</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    <br>Nisi perspiciatis eos dolorum ipsum vel aliquid, 
-                    <br>cumque consequuntur quaerat repudiandae amet voluptates 
-                    <br>ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
-                </p>
+            <section id="features">
+            <h1>Features</h1>
+            <h3>
+                Our aim to make it quick and easy for you
+                <br>to acces your favorite websites. your
+                <br>bookmarks sync between your devices so
+                <br>you can acces them on the go.
+            </h3>
+            <details>
+                <summary>Simple Bookmarking</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        <br>Nisi perspiciatis eos dolorum ipsum vel aliquid, 
+                        <br>cumque consequuntur quaerat repudiandae amet voluptates 
+                        <br>ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
+                    </p>
+            </details>
+            <details>
+                <summary>Speedy Searching</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        <br>Nisi perspiciatis eos dolorum ipsum vel aliquid, 
+                        <br>cumque consequuntur quaerat repudiandae amet voluptates 
+                        <br>ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
+                    </p>
+            </details>
+            <details>  
+                <summary>Easy Sharing</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        <br>Nisi perspiciatis eos dolorum ipsum vel aliquid, 
+                        <br>cumque consequuntur quaerat repudiandae amet voluptates 
+                        <br>ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
+                    </p>
         </details>
         </section>
 

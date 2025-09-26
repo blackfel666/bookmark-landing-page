@@ -2,18 +2,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'roboto', sans-serif;
 }
 
 
 body {
-    font-family: 'roboto', sans-serif;
     margin: 0
 }
 
-h1{ font-size: 3em;}
-h2{ font-size: 2em;}
-h3{ font-size: 1em;}
-p{ font-size: 1.25em;}
+h1{ font-size: 2em;}
+h2{ font-size: 1.5em;}
+h3{ font-size: 0.89em;}
+p{ font-size: 0.70em;}
 ul{list-style: none;}
 
 button {
@@ -32,81 +32,185 @@ button:hover{
 
 .container{
     max-width: 1400px;
-    margin: auto;
 }
 
 header{
-    background-color: antiquewhite;
-    display: flex;
+    display: flex ;
     align-items: center;
-}
- header .logo{
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    padding: 25px 10px;
-    background-color: white;
-
+    padding: 2rem;
+    
 }
 
- header .container{
+.logo{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content:flex-start;
+}
+
+.open-menu{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    padding: 2rem;
-    background-color: rgb(5, 1, 29);
-    opacity: 0.9;
-    width: 412px;
-
+    justify-content: right;
 }
 
 .nav-list{
-    margin: 10px 5px 20px 5px;
-    flex-direction: column;
-    align-items: end;
-    text-align: center;
-}
+    list-style-type: none;
+    display: flex;
+    }
 
-li{
-    margin: 10px 10px;
-    padding: 15px;
-    border-bottom-width: 0.5px;
-    border-bottom-style: solid;
-    color: white;
-    width: 300px;
-    height: 50px;
-}
-
-header .open-menu{
-    display: none;
-}
-
-header a{
+.nav-list li a{
     text-decoration: none;
-    color: white;
 }
 
+.close-menu,
+.open-menu{
+        display: none;
+    }
 
-header a:hover{
-    color: blue;
+@media only screen and (max-width: 550px) {
+
+    /*---------------------------> header <------------------------ */
+
+    
+    .close-menu,
+    .open-menu{
+        display: block;
+    }
+
+    .open-menu{
+        width: 10px;
+        background-color: transparent;
+        margin-left: auto;
 }
 
-nav .login{
-    border-radius: 0;
-    background-color: rgb(5, 1, 29);;
-    border-color: white;
-    border-style: solid;
-    color: white;
-    width: 300px;
-    padding: 10px;
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 2rem 0 0;
+        background-color: rgba(5, 1, 29, 0.938);
+        width: 412px;
+        visibility: hidden;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        margin: 10px 5px 20px 5px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-list li a{
+        color: white;
+    }
+
+    li{
+        padding: 15px 0;
+        border-top-width: 0.5px;
+        border-top-style: solid;
+        color: rgba(255, 255, 255, 0.384);
+        width: 300px;
+    }
+
+    header a{
+        text-decoration: none;
+        color: white;
+    }
+
+    header a:hover{
+        
+    }
+
+    nav .login{
+        border-radius: 0;
+        background-color: transparent;
+        border-color: white;
+        border-style: solid;
+        border-width: 1px;
+        color: white;
+        width: 300px;
+        padding: 10px;
+    }
+
+    nav .logo-boton{
+        width: 300px;
+        padding: 10px 0;
+    }
+
+    nav .close-menu{
+        display: block;
+        background-color: transparent;
+        padding-right: 0;
+        border-radius: 0;
+        float: right;
+    }
+
+    .rr-ss{
+        margin-top: auto;
+        margin-bottom: 60px;
+
+    }
+
+    .facebook,
+    .twitter{
+        background-color: transparent;
+        width: 70px;
+        padding:  5px;
+    }
+
+    /*---------------------------> body <------------------------ */
+
+
+    section{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .img-container{
+        margin: 20px 0 50px;
+        background-color: beige;
+        display: flex;
+        justify-content: center;
+
+    }
+    .img{
+        max-width: 75%;
+        border-color: black;
+        border-style: solid;
+        border-width: 10px;
+        border-radius: 20px;
+        background-color: black;
+        
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
 }
