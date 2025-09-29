@@ -21,7 +21,7 @@
             
             <nav class="nav" id="nav"> 
                 <div class="logo-boton">
-                    <img src="../src/assets/images/logo-bookmark.svg" alt="bookmark">
+                    <img id="menu-logo" src="../src/assets/images/logo-bookmark.svg" alt="bookmark">
                     <button class="close-menu" id="close1"><img src="../src/assets/images/icon-close.svg"></button>
                 </div>
                 <ul class="nav-list">
@@ -45,9 +45,11 @@
     <main>
 
         <section id="simple-bookmark-manager">
-            <div class="img-container">
-                <img class="img" src="../src/assets/images/illustration-features-tab-1.svg">
-            </div>
+
+            <figure class="img-container">  
+                    <img id="img-1" src="../src/assets/images/illustration-features-tab-1.svg">
+            </figure>
+
             <h1>A Simple Bookmark
                 <br>Manager
             </h1>
@@ -58,12 +60,12 @@
                 <br>instantly. Try it for free.
             </h3>
             <div class="boton">
-                <button><p>.boton1</p></button>
-                <button><p>.boton2</p></button>
+                <button><p>Get it on Chrome</p></button>
+                <button><p>Get it on Firefox</p></button>
             </div>
             </section>
 
-            <section id="features">
+        <section id="features">
             <h1>Features</h1>
             <h3>
                 Our aim to make it quick and easy for you
@@ -98,7 +100,9 @@
         </section>
 
         <section id="bookmark-one-click">
-        <p>.img2</p>
+            <figure class="img-container">
+                <img id="img-2" src="../src/assets/images/illustration-features-tab-1.svg">
+            </figure>
         <h1>Bookmark in one click</h1>
         <h3>
             Organize your bookmarks however you like. 
@@ -116,25 +120,43 @@
             <br>favourite you’d like us to prioritize.
         </h3>
         <article class="add-extension">
-            <img src="" alt="">.img
+            <figure class="browser">
+                <img src="../src/assets/images/logo-chrome.svg" alt="">
+                <figcaption>Chrome-logo</figcaption>
+            </figure>
             <h1>Add to Chrome</h1>
             <h2>Minimum version 62</h2>
+            <figure class="dots">
+                <img src="../src/assets/images/bg-dots.svg" alt="">
+            </figure>
             <button class="boton">
                 <p>Add & Install Extension</p>
             </button>
         </article>
         <article class="add-extension">
-            <img src="" alt="">.img
+            <figure class="browser">
+                <img src="../src/assets/images/logo-firefox.svg" alt="">
+                <figcaption>Firefox-logo</figcaption>
+            </figure>
             <h1>Add to Firefox</h1>
             <h2>Minimum version 55</h2>
+            <figure class="dots">
+                <img src="../src/assets/images/bg-dots.svg" alt="">
+            </figure>
             <button class="boton">
                 <p>Add & Install Extension</p>
             </button>
         </article>
         <article class="add-extension">
-            <img src="" alt="">.img
+            <figure class="browser">
+                <img src="../src/assets/images/logo-opera.svg" alt="">
+                <figcaption>Opera-logo</figcaption>
+            </figure>
             <h1>Add to Opera</h1>
             <h2>Minimum version 46</h2>
+            <figure class="dots">
+                <img src="../src/assets/images/bg-dots.svg" alt="">
+            </figure>
             <button class="boton">
                 <p>Add & Install Extension</p>
             </button>
@@ -142,14 +164,15 @@
         </section>
 
         <section id="faqs">
-        <h1>Frequently Asked Questions</h1>
+        <h1>Frequently Asked <br> Questions</h1>
         <h3>
             Here are some of our FAQs. If you have any
             <br>other questions you’d like answered please
             <br>feel free to email us.
         </h3>
+        
         <details>
-            <summary>What is Bookmark?</summary>
+            <summary class="questions">What is Bookmark?</summary>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     <br>Nisi perspiciatis eos dolorum ipsum vel aliquid, 
                     <br>cumque consequuntur quaerat repudiandae amet voluptates 
@@ -157,7 +180,7 @@
                 </p>
         </details>
         <details>
-            <summary>How can I request a new browser?</summary>
+            <summary class="questions">How can I request a new browser?</summary>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     <br>Nisi perspiciatis eos dolorum ipsum vel aliquid, 
                     <br>cumque consequuntur quaerat repudiandae amet voluptates 
@@ -165,7 +188,7 @@
                 </p>
         </details>
         <details>  
-            <summary>Is there a mobile app?</summary>
+            <summary class="questions">Is there a mobile app?</summary>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     <br>Nisi perspiciatis eos dolorum ipsum vel aliquid, 
                     <br>cumque consequuntur quaerat repudiandae amet voluptates 
@@ -173,7 +196,7 @@
                 </p>
         </details>
         <details>  
-            <summary>What about other Chromium browsers?</summary>
+            <summary class="questions">What about other Chromium browsers?</summary>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     <br>Nisi perspiciatis eos dolorum ipsum vel aliquid, 
                     <br>cumque consequuntur quaerat repudiandae amet voluptates 

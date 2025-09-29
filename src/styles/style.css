@@ -10,24 +10,32 @@ body {
     margin: 0
 }
 
-h1{ font-size: 2em;}
+h1{ font-size: 1.4em;}
+
 h2{ font-size: 1.5em;}
+
 h3{ font-size: 0.89em;}
+
 p{ font-size: 0.70em;}
+
 ul{list-style: none;}
 
 button {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: bold;
-    padding: 4px 40px;
-    border-radius: 10px;
+    padding: 15px 15px;
+    border-radius: 5px;
     border: 2px;
+    box-shadow: 10px;
     color: white;
+    box-shadow: 0 5px 5px lightblue;
     background-color: blueviolet;
+    margin: 20px 20px 40px 0;
 }
 
 button:hover{
-    background-color: red;
+    background-color: rgb(236, 235, 235);
+    color: gray;
 }
 
 .container{
@@ -37,7 +45,7 @@ button:hover{
 header{
     display: flex ;
     align-items: center;
-    padding: 2rem;
+    padding: 0rem 2rem 0 2rem;
     
 }
 
@@ -78,6 +86,7 @@ header{
     .close-menu,
     .open-menu{
         display: block;
+        box-shadow: none;
     }
 
     .open-menu{
@@ -130,10 +139,6 @@ header{
         color: white;
     }
 
-    header a:hover{
-        
-    }
-
     nav .login{
         border-radius: 0;
         background-color: transparent;
@@ -143,25 +148,32 @@ header{
         color: white;
         width: 300px;
         padding: 10px;
+        box-shadow: none;
     }
 
     nav .logo-boton{
         width: 300px;
         padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    nav #menu-logo{
     }
 
     nav .close-menu{
         display: block;
         background-color: transparent;
-        padding-right: 0;
         border-radius: 0;
-        float: right;
+        background-color: transparent;
+        margin: 0;
     }
 
     .rr-ss{
         margin-top: auto;
         margin-bottom: 60px;
-
     }
 
     .facebook,
@@ -169,6 +181,7 @@ header{
         background-color: transparent;
         width: 70px;
         padding:  5px;
+        box-shadow: none;
     }
 
     /*---------------------------> body <------------------------ */
@@ -181,29 +194,127 @@ header{
         align-items: center;
     }
 
+    #simple-bookmark-manager, 
+    #bookmark-one-click,
+    #download-the-extension{
+        margin-bottom: 90px;
+    }
+
     h1{
         text-align: center;
     }
 
+    h3{
+        text-align: center;
+        margin: 20px 0;
+        color:gray;
+    }
+
     .img-container{
-        margin: 20px 0 50px;
-        background-color: beige;
+        margin: 20px 0 90px;
         display: flex;
         justify-content: center;
 
     }
-    .img{
-        max-width: 75%;
+    #img-1, #img-2{
+        max-width: 70%;
         border-color: black;
         border-style: solid;
         border-width: 10px;
         border-radius: 20px;
         background-color: black;
-        
+        box-shadow: 90px 40px 0 1px blue;
+    }
+    
+    #img-2{
+        border:none;
+        border-radius: 0;
+        box-shadow: -90px 40px 0 1px blue;
     }
 
+    #features{
+        margin-bottom: 60px;
+    }
 
+    summary{
+        cursor: pointer;
+    }
 
+    details summary{
+        list-style: none;
+        font-weight: bold;
+        color: rgb(86, 86, 86);
+        text-align: center;
+        width: 350px;
+        padding: 20px 0;
+        border-color: grey;
+        border-style: solid;
+        border-width: 1px 0 ;
+
+    }
+
+    details summary.questions{
+        text-align: left;
+        border-width: 0 0 1px;
+        list-style: ;
+        content: '<';
+    }
+
+    details[open] summary.questions {
+        border-bottom: 2px;
+        margin: 0 auto;
+    }
+    
+    details[open] summary {
+        border-bottom:none;
+        margin: 0 auto;
+    }
+
+    details p {
+        text-align: left;
+        font-size: 1em;
+        font-weight: bold;
+        color: grey;
+        line-height: 30px;
+        padding: 10px 0;
+        width: 300px;
+    }
+
+    .add-extension{
+        width: 300px;
+        margin-bottom: 30px;
+        padding: 50px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 2px 15px 20px 1px rgb(221, 221, 221);
+    }
+
+    article h1{
+        margin-top: 20px;
+    }
+
+    article h2{
+        font-size: 1em;
+        color: gray;
+        margin: 20px 0 30px;
+    }
+
+    figure figcaption {
+        display: none;
+    }
+
+    figure .dots{
+        width: 300px;
+    }
+
+    article button{
+        display: flex;
+        margin: 30px 0;
+        font-size: 1.5em;
+        padding: 20px 30px;
+    }
 
 }
 
