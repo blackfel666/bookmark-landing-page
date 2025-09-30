@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="blackfel666"/>
     <title>bookmark-landing-page</title>
-
+    <link rel="icon" href="../src/assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="../src/styles/style.css">
     <script src="../src/js/main.js" defer></script>
 
@@ -48,15 +48,17 @@
 
             <figure class="img-container">  
                 <img id="img-1" src="../src/assets/images/illustration-features-tab-1.svg">
+                <div id="forma"></div>
             </figure>
-
-            <h1>A Simple Bookmark Manager</h1>
-            <h3>
-                A clean and simple interface to organize 
-                your favorite websites.Open a new 
-                browser tab and see your sites load 
-                instantly. Try it for free.
-            </h3>
+            <hgroup id="hgroup1">
+                <h1>A Simple Bookmark Manager</h1>
+                <h3>
+                    A clean and simple interface to organize 
+                    your favorite websites.Open a new 
+                    browser tab and see your sites load 
+                    instantly. Try it for free.
+                </h3>
+            </hgroup>
             <div class="boton">
                 <button><p>Get it on Chrome</p></button>
                 <button><p>Get it on Firefox</p></button>
@@ -72,23 +74,26 @@
                 you can acces them on the go.
             </h3>
             <hgroup>
-                <h4>Simple Bookmarking</h4>
-                <h4>Speedy Searching</h4>
-                <h4>Easy Sharing</h4>      
+                <h4 data-img="0">Simple Bookmarking</h4>
+                <h4 data-img="1">Speedy Searching</h4>
+                <h4 data-img="2">Easy Sharing</h4>
             </hgroup>
-        </section>
+            </section>
 
-        <section id="bookmark-one-click">
+            <section id="bookmark-one-click">
             <figure class="img-container">
-                <img id="img-2" src="../src/assets/images/illustration-features-tab-1.svg">
+                <img id="img-2" class="feature-img" src="../src/assets/images/illustration-features-tab-1.svg">
+                <img id="img-2" class="feature-img" src="../src/assets/images/illustration-features-tab-2.svg">
+                <img id="img-2" class="feature-img" src="../src/assets/images/illustration-features-tab-3.svg">
+                <div id="forma2"></div>
             </figure>
-        <h1>Bookmark in one click</h1>
-        <h3>
-            Organize your bookmarks however you like. 
-            Our simple drag-and-drop interface gives 
-            you complete control over how you manage 
-            your favourite sites.
-        </h3>
+            <h1>Bookmark in one click</h1>
+            <h3>
+                Organize your bookmarks however you like. 
+                Our simple drag-and-drop interface gives 
+                you complete control over how you manage 
+                your favourite sites.
+            </h3>
         </section>
 
         <section id="download-the-extension">
@@ -200,12 +205,12 @@
     </main>
 
     <footer>
-        <img src="../src/assets/images/logo-bookmark.svg" alt="">
+        <img id="logo" src="../src/assets/images/logo-bookmark.svg" alt="">
         <nav id="footer-nav">
             <ul>
-                <li><a href="">features</a></li>
-                <li><a href="">pricing</a></li>
-                <li><a href="">contact</a></li>
+                <li>features</li>
+                <li>pricing</li>
+                <li>contact</li>
             </ul>
         </nav>
         <figure id="rrss">
