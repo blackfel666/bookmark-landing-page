@@ -47,7 +47,7 @@
         <section id="simple-bookmark-manager">
 
             <figure class="img-container">  
-                    <img id="img-1" src="../src/assets/images/illustration-features-tab-1.svg">
+                <img id="img-1" src="../src/assets/images/illustration-features-tab-1.svg">
             </figure>
 
             <h1>A Simple Bookmark Manager</h1>
@@ -190,31 +190,28 @@
         <section id="contact-us">
         <h4>35,000+ already joined</h4>
         <h1>Stay up-to-date with what we’re doing</h1>
-        <input id="email" type="text" name="email" placeholder="Enter your email address">
-        <button id="contact-us-btn">
-                <p>Contact Us</p>
-            </button>
+        <form id="formulario">
+            <input type="email" id="email" name="email" placeholder="Enter your email addres" >
+            <span class="error" id="errorEmail"></span>
+            <button type="submit" id="contact-us-btn">Contact Us</button>
+        </form>
         </section>
 
     </main>
 
     <footer>
-        <img src="" alt="">.logo
-        <nav>
+        <img src="../src/assets/images/logo-bookmark.svg" alt="">
+        <nav id="footer-nav">
             <ul>
-                <li><a href="/">FEATURES</a></li>
-                <li><a href="/sobre-nosotros">PRICING</a></li>
-                <li><a href="/contacto">Contact</a></li>
+                <li><a href="">features</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">contact</a></li>
             </ul>
         </nav>
-        <div id="rrss">
-            <a href="enlace" target="_blank">
-                <img src="iconos/facebook.png" alt="Facebook">
-            </a>
-            <a href="enlace" target="_blank">
-                <img src="iconos/twitter.png" alt="Twitter">
-            </a>
-        </div>
+        <figure id="rrss">
+                <img  class="icon-rrss"src="../src/assets/images/icon-facebook.svg" alt="Facebook">
+                <img class="icon-rrss" src="../src/assets/images/icon-twitter.svg" alt="Twitter">
+        </figure>
 
     </footer>
 </body>
