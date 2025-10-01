@@ -3,10 +3,11 @@
     margin: 0;
     padding: 0;
     font-family: "puppy", sans-serif;
+    overflow-x: hidden;
 }
 
 body{
-    margin: 0;
+    margin: 0 auto;
     padding-top: 3%;
 }
 
@@ -15,11 +16,16 @@ h1{
     font-size: 1.5em;
 }
 
-h2{ font-size: 1.5em;}
+h2{ 
+    font-size: 1.5em;}
 
 h3{ 
+    margin-top: 15px;
     width: 80vw;
-    font-size: 0.89em;
+    font-size: 0.75em;
+    color: dimgrey;
+    font-weight: normal;
+    line-height: 1.5;
 }
 
 p{ font-size: 0.70em;}
@@ -83,7 +89,7 @@ header{
         display: none;
     }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 425px) {
 
     /*---------------------------> header <------------------------ */
 
@@ -233,7 +239,7 @@ header{
         position: absolute;
         z-index: 0;
         background-color: blue;
-        height: 20vh;
+        height: 25vh;
         width: 80vw;
         right: 0;
         margin-top: 15%;
@@ -516,7 +522,7 @@ header{
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 426px) {
 
     /*---------------------------> header <------------------------ */
 
@@ -640,14 +646,14 @@ header{
     #download-the-extension,
     #faqs{
         margin-bottom: 90px;
-        margin-top: 15%;
+        margin-top: 10%;
     }
 
     /*---------------> simple-bookmark-manager <-------------- */
 
 
     #simple-bookmark-manager{
-        display: flex;
+        display:flex ;
         flex-direction: row-reverse;
         flex-wrap: wrap;
     }
@@ -673,23 +679,31 @@ header{
         z-index: -6;
         background-color: blue;
         height: 20vh;
-        width: 50vw;
+        width: 40vw;
         right: 0;
         margin-top: 15%;
         border-radius: 100px 0 0 100px;
     }
 
+    #simple1{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start ;
+    }
+
     #hgroup1 {
         width: 40vw;
         margin-right: 5%;
-        top: 0;
+        margin-top: 0;
+        padding: 0;
         display: flex;
         flex-direction: column;
     }
 
-    #hgroup1 h1, h3{
-        display: flex;
+    #hgroup1 h1{
         width: 40vw;
+        margin: 0;
+        padding: 0;
     }
 
     #hgroup1 h3{
@@ -699,10 +713,8 @@ header{
     }
 
     #simple-bookmark-manager .boton {
-        align-items: center;
-        width: 100vw;
         display: flex;
-        justify-content: center;
+        margin: 0;
 
     }
 
@@ -710,9 +722,348 @@ header{
         margin: 10px;
     }
 
+    /*---------------> features <-------------- */
+
+    #features{
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+    #features h1, h3{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        width: 50vw;
+    }
+
+    hgroup{
+        margin-top: 40px;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        width: 80vw;
+    }
+
+    hgroup h4{
+        font-weight: bold;
+        font-size: 14px;
+        color: rgb(86, 86, 86);
+        text-align: center;
+        width: 80vw;
+        padding: 20px 0;
+        border-bottom: thin solid grey;
+    }
+
+    hgroup h4:hover {
+        box-shadow:  inset 0 -10px 0px -6px rgb(255, 0, 0);
+    }
+
+    .feature-img {
+        display: none;
+    }
+
+    .feature-img.active {
+        display: block;
+    }
+
+    /*---------------> bookmark in one click <-------------- */
+
+    #bookmark-one-click{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        margin-top: 60px;
+    }
+
+    .img-container{
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .img-container #img-2{
+        border: none;
+        background-color: transparent;
+        width: 90vw;
+        margin-right: 40px;
+    }
+
+    .img-container #forma2 {
+        position: absolute;
+        background-color: blue;
+        height: 20vh;
+        width: 50vw;
+        left: 0;
+        margin-top: 15%;
+        border-radius: 0 100px 100px 0;
+    }
+
+    #hgroup2 {
+        width: 40vw;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hgroup2 h1, h3{
+        display: flex;
+        width: 40vw;
+    }
+
+    #hgroup2 h3{
+        text-align: left;
+        margin:20px 0;
+    }
+
+    /*---------------> download the extension <-------------- */
+
+    #download-the-extension{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #hgroup3{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        width: 100vw;
+    }
+
+    #add-2{margin-top: 60px;}
+    #add-3{margin-top: 120px;}
+
+    .add-extension{
+        width: 29vw;
+        margin: 0 10px;
+        padding: 50px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 2px 15px 20px 1px rgb(221, 221, 221);
+    }
+
+    article h1{
+        font-size: 1.2em;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    article h2{
+        font-size: 0.7em;
+        color: gray;
+        margin: 13px 0 40px;
+    }
+
+    figure figcaption {
+        display: none;
+    }
+
+    .dots img{
+        width: 25vw;
+    }
+
+    article.add-extension button{
+        width: 25vw;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        font-size: 1em;
+        text-align: center;
+        padding: 20px 30px;
+    }
+
+        /*---------------> faqs <-------------- */
+
+    #faqs{
+        display: flex;
+        align-items: center;
+    }
+
+    #hgroup4 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 60vw;  
+    }
+
+    #hgroup4 h3{
+        width: 60vw;
+    }
+
+    summary{
+        list-style: none;
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    summary::marker,
+    summary::-webkit-details-marker {
+        content: "";
+        display: none;
+    }
+
+    summary::after {
+        content: ">";
+        margin-left: 10px; 
+        transition: transform 0.25s ease; 
+        font-weight: bold;
+        color: #4A90E2; 
+    }
+
+    details[open] summary::after {
+        transform: rotate(90deg); 
+    }
+
+    details summary{
+        list-style-type: disc;
+        font-weight: bold;
+        color: rgb(86, 86, 86);
+        width: 50vw;
+        padding: 20px 0;
+        border-bottom: thin solid grey;
+    }
+
+    details summary.questions{
+        text-align: left;
+    }
+
+    details[open] summary.questions {
+        list-style-type:square;
+        border-bottom: 2px;
+        margin: 0 auto;
+    }  
+
+    details p {
+        text-align: left;
+        font-size: 1em;
+        font-weight: bold;
+        color: grey;
+        line-height: 25px;
+        padding: 10px 0;
+        width: 50vw;
+    }
+
+    #faqs .boton{
+        padding: 15px 30px;
+        margin-top: 60px;
+        font-size: 1.4em;
+    }
+
+/*---------------> contact us <-------------- */
+
+    #contact-us{
+        background-color: blue;
+        padding: 30px 0;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hgroup5{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 60vw; 
+        margin: 0; 
+    }
+
+    #contact-us h4{
+        font-weight: lighter;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+        border: none;
+        color: white;
+    }
+
+    #formulario{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #email{
+        border-radius: 5px;
+        padding: 10px;
+        width: 40vw;
+    }
+
+    #formulario .error {
+        color: white;
+        width: 50vw;
+        font-size: 14px;
+        display: none;
+        text-align: left;
+        padding: 3px;
+        border: 5px solid red;
+        background-color: red;
+        }
+
+    input:invalid {
+        border: 5px solid red;
+    }
+
+    #contact-us-btn{
+        background-color: red;
+        color: white;
+        width: 15vw;
+        box-shadow: none;
+        margin: 30px 10px;
+        font-size: 0.7em;
+        padding: 13px 0;
+    }
+/*---------------> footer <-------------- */
+
+    footer {
+        display: flex;
+        flex-direction:row;
+        background-color: rgb(13, 13, 45);
+        padding: 50px 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer #logo{
+        filter: hue-rotate(180deg) invert(100%);   
+    }
+
+    #footer-nav{
+        display: flex;
+        width: 40vw;
+    }
+
+    #footer-nav ul{
+        display: flex;
+        width: 10vw;
+        justify-content: center;
+    }
+
+    #footer-nav ul li{
+        color: white;
+        list-style: none;
+        border: none;
+        letter-spacing: 2px;
+        padding: 0 10px;
+        font-size: 0.5em
+    }
+
+    footer #rrss{
+        margin: 30px 0;
+    }
+
+    figure .icon-rrss{
+        padding: 20px;
+        text-decoration: none;
+    }
 
 }
 
-@media only screen and (min-width: 768px) {
+/*@media only screen and (min-width: 768px) {
 
-}
+}*/
