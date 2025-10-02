@@ -12,18 +12,20 @@ body{
 }
 
 h1{ 
-    width: 75vw;
-    font-size: 1.5em;
+    width: 80vw;
+    font-size: 1.3em;
 }
 
 h2{ 
-    font-size: 1.5em;}
+    font-size: 1.5em;
+    color: rgb(184, 184, 184);
+}
 
 h3{ 
     margin-top: 15px;
     width: 80vw;
     font-size: 0.75em;
-    color: dimgrey;
+    color: rgb(184, 184, 184);
     font-weight: normal;
     line-height: 1.5;
 }
@@ -89,6 +91,8 @@ header{
         display: none;
     }
 
+
+
 @media only screen and (max-width: 425px) {
 
     /*---------------------------> header <------------------------ */
@@ -119,7 +123,6 @@ header{
         width: 100vw;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
         z-index: 10;
-
     }
 
     .nav.visible {
@@ -254,7 +257,6 @@ header{
     h3{
         text-align: center;
         margin-bottom: 40px;
-        color:gray;
     }
 
     #simple-bookmark-manager .boton {
@@ -262,8 +264,8 @@ header{
         width: 100vw;
         display: flex;
         justify-content: center;
-
     }
+
     #simple-bookmark-manager button {
         margin: 10px;
     }
@@ -290,7 +292,7 @@ header{
         text-align: center;
         width: 80vw;
         padding: 20px 0;
-        border-bottom: thin solid grey;
+        border-bottom: thin solid rgb(184, 184, 184);;
     }
 
     hgroup h4:hover {
@@ -325,6 +327,21 @@ header{
         border-radius: 0 100px 100px 0;
     }
 
+    #bookmark{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #bookmark button{
+        display: none;
+    }
+
+    #hgroup2, #hgroup3, #hgroup4 {
+        margin-top:0;
+    }
+
+
     /*---------------> download the extension <-------------- */
 
     .add-extension{
@@ -344,7 +361,6 @@ header{
 
     article h2{
         font-size: 1em;
-        color: gray;
         margin: 0px 0 40px;
     }
 
@@ -382,15 +398,21 @@ header{
     }
 
     summary::after {
-        content: ">";
+        content: "";
         margin-left: 10px; 
         transition: transform 0.25s ease; 
         font-weight: bold;
-        color: #4A90E2; 
+        background: url(../assets/images/icon-arrow.svg) no-repeat center center;
+        background-size: contain;
+        width: 20px; 
+        height: 20px; 
+        display: inline-block;  
+        margin-left: 10px; 
+        
     }
 
     details[open] summary::after {
-        transform: rotate(90deg); 
+        transform: rotate(-180deg); 
     }
 
     details summary{
@@ -399,7 +421,7 @@ header{
         color: rgb(86, 86, 86);
         width: 85vw;
         padding: 20px 0;
-        border-bottom: thin solid grey;
+        border-bottom: thin solid rgb(184, 184, 184);
     }
 
     details summary.questions{
@@ -410,13 +432,13 @@ header{
         list-style-type:square;
         border-bottom: 2px;
         margin: 0 auto;
-    }  
+    }   
 
     details p {
         text-align: left;
-        font-size: 1em;
+        font-size: 0.9em;
         font-weight: bold;
-        color: grey;
+        color: rgb(184, 184, 184);
         line-height: 25px;
         padding: 10px 0;
         width: 80vw;
@@ -445,9 +467,18 @@ header{
         text-transform: uppercase;
         letter-spacing: 4px;
         margin-bottom: 20px;
+        border: none;
+        color: white;
     }
 
     #formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    #form-btn{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -455,7 +486,6 @@ header{
 
     #email{
         width: 80vw;
-        border-radius: 5px;
         padding: 10px;
     }
 
@@ -468,10 +498,15 @@ header{
         padding: 3px;
         border: 5px solid red;
         background-color: red;
+        border-radius:0  0 10px 10px;
         }
 
     input:invalid {
         border: 5px solid red;
+        border-radius:5px 5px 0 0;
+        background-image: url(../assets/images/icon-error.svg);
+        background-position: center right 10px;
+        background-repeat: no-repeat;
     }
 
     #contact-us-btn{
@@ -479,7 +514,14 @@ header{
         color: white;
         width: 80vw;
         box-shadow: none;
-        margin: 30px 0;
+        margin: 30px 10px;
+        font-size: 0.7em;
+        padding: 13px 0;
+    }
+
+    #contact-us-btn:hover{
+        background-color: white;
+        color:red;
     }
 
 /*---------------> footer <-------------- */
@@ -504,7 +546,7 @@ header{
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
-        color: white;
+        color: rgb(184, 184, 184);
         list-style: none;
         border: none;
         font-weight: bold;
@@ -632,6 +674,12 @@ header{
         box-shadow: none;
     }
 
+    .facebook:hover,
+    .twitter:hover{
+        filter:invert(42%) sepia(100%) saturate(1352%) hue-rotate(-50deg) brightness(90%) contrast(119%);
+        background-color: transparent;
+    }
+
     /*---------------------------> body <------------------------ */
 
     section{
@@ -662,6 +710,7 @@ header{
         margin: 10px 10px 90px 0;
         display: flex;
         justify-content: center;
+        box-shadow: 1px 20px 30px 1px rgba(4, 4, 4, 0.267);
     }
 
     #img-1, #img-2{
@@ -670,7 +719,6 @@ header{
         border-style: solid;
         border-width: 10px;
         border-radius: 20px;
-        background-color: black;
         z-index: 1;
     }
 
@@ -719,8 +767,14 @@ header{
     }
 
     #simple-bookmark-manager button {
-        margin: 10px;
+        margin-right: 10px;
     }
+
+    #simple-bookmark-manager button:hover{
+    background-color:white;
+    border: thin solid blue;
+    color: blue;
+}
 
     /*---------------> features <-------------- */
 
@@ -780,6 +834,7 @@ header{
     .img-container{
         display: flex;
         justify-content: flex-start;
+        box-shadow: none;
     }
     
     .img-container #img-2{
@@ -814,6 +869,12 @@ header{
     #hgroup2 h3{
         text-align: left;
         margin:20px 0;
+    }
+
+    #bookmark{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start ;
     }
 
     /*---------------> download the extension <-------------- */
@@ -876,6 +937,13 @@ header{
         padding: 20px 30px;
     }
 
+    article.add-extension button:hover{
+        background-color: white;
+        box-shadow: none;
+        border: thin solid blue;
+        color: blue;
+    }
+
         /*---------------> faqs <-------------- */
 
     #faqs{
@@ -908,15 +976,21 @@ header{
     }
 
     summary::after {
-        content: ">";
+        content: "";
         margin-left: 10px; 
         transition: transform 0.25s ease; 
         font-weight: bold;
-        color: #4A90E2; 
+        background: url(../assets/images/icon-arrow.svg) no-repeat center center;
+        background-size: contain;
+        width: 20px; 
+        height: 20px; 
+        display: inline-block;  
+        margin-left: 10px;
     }
 
     details[open] summary::after {
-        transform: rotate(90deg); 
+        transform: rotate(180deg);
+        filter: hue-rotate(100deg);
     }
 
     details summary{
@@ -925,7 +999,7 @@ header{
         color: rgb(86, 86, 86);
         width: 50vw;
         padding: 20px 0;
-        border-bottom: thin solid grey;
+        border-bottom: thin solid rgb(184, 184, 184);
     }
 
     details summary.questions{
@@ -936,6 +1010,7 @@ header{
         list-style-type:square;
         border-bottom: 2px;
         margin: 0 auto;
+        color: red;
     }  
 
     details p {
@@ -982,41 +1057,66 @@ header{
         color: white;
     }
 
+    #contact-us h1{
+        width: 40vw;
+    }
+
     #formulario{
         display: flex;
-        flex-direction: row;
+        flex-direction:column;
         align-items: center;
     }
 
+    #form-btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 80vw;
+    }
+
     #email{
-        border-radius: 5px;
         padding: 10px;
         width: 40vw;
     }
 
     #formulario .error {
         color: white;
-        width: 50vw;
+        width: 40vw;
         font-size: 14px;
         display: none;
         text-align: left;
         padding: 3px;
         border: 5px solid red;
         background-color: red;
+        border-radius:0  0 10px 10px;
         }
 
     input:invalid {
         border: 5px solid red;
+        border-radius:5px 5px 0 0;
+        background-image: url(../assets/images/icon-error.svg);
+        background-position: center right 10px;
+        background-repeat: no-repeat;
     }
 
     #contact-us-btn{
         background-color: red;
         color: white;
         width: 15vw;
+        height: 40px;
         box-shadow: none;
-        margin: 30px 10px;
         font-size: 0.7em;
         padding: 13px 0;
+        margin-left: 5%;
+    }
+
+    #contact-us-btn:hover{
+        background-color: white;
+        color: red;
+        border: thin solid red;
+
     }
 /*---------------> footer <-------------- */
 
@@ -1024,7 +1124,7 @@ header{
         display: flex;
         flex-direction:row;
         background-color: rgb(13, 13, 45);
-        padding: 50px 0;
+        padding: 50px 20px;
         justify-content: space-between;
         align-items: center;
     }
@@ -1035,12 +1135,12 @@ header{
 
     #footer-nav{
         display: flex;
-        width: 40vw;
+        width: 50vw;
     }
 
     #footer-nav ul{
         display: flex;
-        width: 10vw;
+        width: 50vw;
         justify-content: center;
     }
 
@@ -1049,12 +1149,17 @@ header{
         list-style: none;
         border: none;
         letter-spacing: 2px;
-        padding: 0 10px;
-        font-size: 0.5em
+        padding: 0 5px;
+        font-size: 0.9em;
+        
     }
 
     footer #rrss{
         margin: 30px 0;
+    }
+
+    .icon-rrss:hover{
+        filter:invert(42%) sepia(100%) saturate(1352%) hue-rotate(-50deg) brightness(90%) contrast(119%);
     }
 
     figure .icon-rrss{
@@ -1064,6 +1169,537 @@ header{
 
 }
 
-/*@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
+    /*---------------------------> header <------------------------ */
 
-}*/
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        height: 5vh;
+    }
+
+    .open-menu{
+        display: none;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction:row;
+        top: unset;
+        right: unset;
+        bottom: unset;
+        background-color: unset;
+        visibility: visible;
+        width: 50vw;
+        box-shadow: unset;
+        margin-top: 0;
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .nav-list li a{
+        color: black;
+    }
+
+    li{
+        border-top: none;
+        width: 40vw;
+    }
+
+    nav .login{
+        background-color: red;
+        border-radius: 10px;
+        border-color: none;
+        border-style: none;
+        width: 10vw;
+    }
+
+    nav .login{
+        background-color: red;
+        border-radius: 5px;
+        color: white;
+        width: 10vw;
+    }
+
+    nav .login:hover{
+        background-color: white;
+        border-style:thin solid red ;
+        color: red;
+    }
+
+    .nav-list li a{
+        font-size: 0.9em;
+    }
+
+    nav .logo-boton, .rr-ss{
+        display: none;
+    }
+
+    /*---------------> simple-bookmark-manager <-------------- */
+
+
+    .img-container{
+        margin: 10px 10px 90px 0;
+        display: flex;
+        justify-content: center;
+        box-shadow: 1px 20px 30px 1px rgba(4, 4, 4, 0.267);
+    }
+
+    #img-1, #img-2{
+        max-width: 35vw;
+    }
+
+    .img-container #forma {
+        position: absolute;
+        z-index: -6;
+        background-color: blue;
+        height: 20vh;
+        width: 40vw;
+        right: 0;
+        margin-top: 15%;
+        border-radius: 100px 0 0 100px;
+    }
+
+    #simple1{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start ;
+    }
+
+    #hgroup1 {
+        width: 50vw;
+        margin-right: 5%;
+        margin-top: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    #hgroup1 h1{
+        width: 20vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    #hgroup1 h3{
+        text-align: left;
+        margin:20px 0;
+        color:gray;
+        width: 35vw;
+    }
+
+    #simple-bookmark-manager .boton {
+        display: flex;
+        margin: 0;
+
+    }
+
+    #simple-bookmark-manager button {
+        margin-right: 10px;
+    }
+
+    #simple-bookmark-manager button:hover{
+    background-color:white;
+    border: thin solid blue;
+    color: blue;
+}
+
+    /*---------------> features <-------------- */
+
+    #features{
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+    #features h1, h3{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        width: 50vw;
+    }
+
+    hgroup{
+        margin-top: 40px;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        width: 80vw;
+    }
+
+    hgroup h4{
+        font-weight: bold;
+        font-size: 14px;
+        color: rgb(86, 86, 86);
+        text-align: center;
+        width: 80vw;
+        padding: 20px 0;
+        border-bottom: thin solid grey;
+    }
+
+    hgroup h4:hover {
+        box-shadow:  inset 0 -10px 0px -6px rgb(255, 0, 0);
+    }
+
+    .feature-img {
+        display: none;
+    }
+
+    .feature-img.active {
+        display: block;
+    }
+
+    /*---------------> bookmark in one click <-------------- */
+
+    #bookmark-one-click{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        margin-top: 60px;
+    }
+
+    .img-container{
+        display: flex;
+        justify-content: flex-start;
+        box-shadow: none;
+    }
+    
+    .img-container #img-2{
+        border: none;
+        background-color: transparent;
+        width: 90vw;
+        margin-right: 40px;
+    }
+
+    .img-container #forma2 {
+        position: absolute;
+        background-color: blue;
+        height: 20vh;
+        width: 50vw;
+        left: 0;
+        margin-top: 15%;
+        border-radius: 0 100px 100px 0;
+    }
+
+    #hgroup2 {
+        width: 40vw;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hgroup2 h1, h3{
+        display: flex;
+        width: 40vw;
+    }
+
+    #hgroup2 h3{
+        text-align: left;
+        margin:20px 0;
+    }
+
+    #bookmark{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start ;
+    }
+
+    /*---------------> download the extension <-------------- */
+
+    #download-the-extension{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #hgroup3{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        width: 100vw;
+    }
+
+    #add-2{margin-top: 60px;}
+    #add-3{margin-top: 120px;}
+
+    .add-extension{
+        width: 29vw;
+        margin: 0 10px;
+        padding: 50px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 2px 15px 20px 1px rgb(221, 221, 221);
+    }
+
+    article h1{
+        font-size: 1.2em;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    article h2{
+        font-size: 0.7em;
+        color: gray;
+        margin: 13px 0 40px;
+    }
+
+    figure figcaption {
+        display: none;
+    }
+
+    .dots img{
+        width: 25vw;
+    }
+
+    article.add-extension button{
+        width: 25vw;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        font-size: 1em;
+        text-align: center;
+        padding: 20px 30px;
+    }
+
+    article.add-extension button:hover{
+        background-color: white;
+        box-shadow: none;
+        border: thin solid blue;
+        color: blue;
+    }
+
+        /*---------------> faqs <-------------- */
+
+    #faqs{
+        display: flex;
+        align-items: center;
+    }
+
+    #hgroup4 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 60vw;  
+    }
+
+    #hgroup4 h3{
+        width: 60vw;
+    }
+
+    summary{
+        list-style: none;
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    summary::marker,
+    summary::-webkit-details-marker {
+        content: "";
+        display: none;
+    }
+
+    summary::after {
+        content: "";
+        margin-left: 10px; 
+        transition: transform 0.25s ease; 
+        font-weight: bold;
+        background: url(../assets/images/icon-arrow.svg) no-repeat center center;
+        background-size: contain;
+        width: 20px; 
+        height: 20px; 
+        display: inline-block;  
+        margin-left: 10px;
+    }
+
+    details[open] summary::after {
+        transform: rotate(180deg);
+        filter: hue-rotate(100deg);
+    }
+
+    details summary{
+        list-style-type: disc;
+        font-weight: bold;
+        color: rgb(86, 86, 86);
+        width: 50vw;
+        padding: 20px 0;
+        border-bottom: thin solid rgb(184, 184, 184);
+    }
+
+    details summary.questions{
+        text-align: left;
+    }
+
+    details[open] summary.questions {
+        list-style-type:square;
+        border-bottom: 2px;
+        margin: 0 auto;
+        color: red;
+    }  
+
+    details p {
+        text-align: left;
+        font-size: 1em;
+        font-weight: bold;
+        color: grey;
+        line-height: 25px;
+        padding: 10px 0;
+        width: 50vw;
+    }
+
+    #faqs .boton{
+        padding: 15px 30px;
+        margin-top: 60px;
+        font-size: 1.4em;
+    }
+
+/*---------------> contact us <-------------- */
+
+    #contact-us{
+        background-color: blue;
+        padding: 30px 0;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hgroup5{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 60vw; 
+        margin: 0; 
+    }
+
+    #contact-us h4{
+        font-weight: lighter;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+        border: none;
+        color: white;
+    }
+
+    #contact-us h1{
+        width: 40vw;
+    }
+
+    #formulario{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    #form-btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 80vw;
+    }
+
+    #email{
+        padding: 10px;
+        width: 40vw;
+    }
+
+    #formulario .error {
+        color: white;
+        width: 40vw;
+        font-size: 14px;
+        display: none;
+        text-align: left;
+        padding: 3px;
+        border: 5px solid red;
+        background-color: red;
+        border-radius:0  0 10px 10px;
+        }
+
+    input:invalid {
+        border: 5px solid red;
+        border-radius:5px 5px 0 0;
+        background-image: url(../assets/images/icon-error.svg);
+        background-position: center right 10px;
+        background-repeat: no-repeat;
+    }
+
+    #contact-us-btn{
+        background-color: red;
+        color: white;
+        width: 15vw;
+        height: 40px;
+        box-shadow: none;
+        font-size: 0.7em;
+        padding: 13px 0;
+        margin-left: 5%;
+    }
+
+    #contact-us-btn:hover{
+        background-color: white;
+        color: red;
+        border: thin solid red;
+
+    }
+/*---------------> footer <-------------- */
+
+    footer {
+        display: flex;
+        flex-direction:row;
+        background-color: rgb(13, 13, 45);
+        padding: 50px 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer #logo{
+        filter: hue-rotate(180deg) invert(100%);   
+    }
+
+    #footer-nav{
+        display: flex;
+        width: 50vw;
+    }
+
+    #footer-nav ul{
+        display: flex;
+        width: 50vw;
+        justify-content: center;
+    }
+
+    #footer-nav ul li{
+        color: white;
+        list-style: none;
+        border: none;
+        letter-spacing: 2px;
+        padding: 0 5px;
+        font-size: 0.9em;
+        
+    }
+
+    footer #rrss{
+        margin: 30px 0;
+    }
+
+    .icon-rrss:hover{
+        filter:invert(42%) sepia(100%) saturate(1352%) hue-rotate(-50deg) brightness(90%) contrast(119%);
+    }
+
+    figure .icon-rrss{
+        padding: 20px;
+        text-decoration: none;
+    }
+
+}

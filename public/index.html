@@ -89,15 +89,21 @@
                 <img id="img-2" class="feature-img" src="../src/assets/images/illustration-features-tab-3.svg">
                 <div id="forma2"></div>
             </figure>
-            <hgroup id="hgroup2">
-                <h1>Bookmark in one click</h1>
-                <h3>
-                    Organize your bookmarks however you like. 
-                    Our simple drag-and-drop interface gives 
-                    you complete control over how you manage 
-                    your favourite sites.
-                </h3>
-            </hgroup>
+            <div id="bookmark">
+                <hgroup id="hgroup2">
+                    <h1>Bookmark in one click</h1>
+                    <h3>
+                        Organize your bookmarks however you like. 
+                        Our simple drag-and-drop interface gives 
+                        you complete control over how you manage 
+                        your favourite sites.
+                    </h3>
+                </hgroup>
+                <button class="boton">
+                    <p>More Info</p>
+                </button>
+            </div>
+            
         </section>
 
         <section id="download-the-extension">
@@ -195,7 +201,7 @@
                     ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
                 </p>
         </details>
-        <button class="boton">
+            <button class="boton">
                 <p>More Info</p>
             </button>
         </section>
@@ -205,11 +211,13 @@
             <h4>35,000+ already joined</h4>
             <h1>Stay up-to-date with what we’re doing</h1>
         </hgroup>
-        <form id="formulario">
-            <input type="email" id="email" name="email" placeholder="Enter your email addres" >
-            <span class="error" id="errorEmail"></span>
-            <button type="submit" id="contact-us-btn">Contact Us</button>
-        </form>
+        <div id="form-btn">
+            <form id="formulario">
+                <input type="email" id="email" name="email" placeholder="Enter your email addres" >
+                <span class="error" id="errorEmail"></span>
+            </form>
+            <button id="contact-us-btn">Contact Us</button>
+        </div>
         </section>
 
     </main>
