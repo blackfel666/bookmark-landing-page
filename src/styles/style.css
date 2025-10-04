@@ -1173,6 +1173,10 @@ header{
 @media only screen and (min-width: 769px) {
     /*---------------------------> header <------------------------ */
 
+    body{
+        margin: 0 5%;
+    }
+
     header{
         display: flex;
         flex-direction: row-reverse;
