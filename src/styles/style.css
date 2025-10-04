@@ -122,7 +122,6 @@ header{
         visibility: hidden;
         width: 100vw;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-        z-index: 10;
     }
 
     .nav.visible {
@@ -235,18 +234,18 @@ header{
         border-width: 10px;
         border-radius: 20px;
         background-color: black;
-        z-index: 1;
+
     }
 
     .img-container #forma {
         position: absolute;
-        z-index: 0;
         background-color: blue;
-        height: 25vh;
+        height: 20vh;
         width: 80vw;
         right: 0;
         margin-top: 15%;
         border-radius: 100px 0 0 100px;
+        z-index: -6;
     }
 
     h1{
@@ -320,11 +319,12 @@ header{
         position: absolute;
         z-index: 0;
         background-color: blue;
-        height: 13vh;
+        height: 20vh;
         width: 80vw;
         left: 0;
         margin-top: 15%;
         border-radius: 0 100px 100px 0;
+        z-index: -6;
     }
 
     #bookmark{
@@ -593,7 +593,7 @@ header{
         visibility: hidden;
         width: 50vw;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-        z-index: 10;
+        z-index: 1;
 
     }
 
@@ -704,6 +704,8 @@ header{
         display:flex ;
         flex-direction: row-reverse;
         flex-wrap: wrap;
+        justify-content: center;
+        
     }
 
     .img-container{
@@ -719,7 +721,6 @@ header{
         border-style: solid;
         border-width: 10px;
         border-radius: 20px;
-        z-index: 1;
     }
 
     .img-container #forma {
@@ -731,6 +732,7 @@ header{
         right: 0;
         margin-top: 15%;
         border-radius: 100px 0 0 100px;
+        z-index: -6;
     }
 
     #simple1{
@@ -828,6 +830,7 @@ header{
         display: flex;
         align-items: flex-start;
         flex-direction: row;
+        justify-content: center;
         margin-top: 60px;
     }
 
@@ -852,6 +855,7 @@ header{
         left: 0;
         margin-top: 15%;
         border-radius: 0 100px 100px 0;
+        z-index: -6;
     }
 
     #hgroup2 {
@@ -1269,10 +1273,11 @@ header{
         display: flex;
         flex-direction: column;
         justify-content:flex-start ;
+        width: 35vw;
     }
 
     #hgroup1 {
-        width: 50vw;
+        width: 40vw;
         margin-right: 5%;
         margin-top: 0;
         padding: 0;
@@ -1332,7 +1337,7 @@ header{
         display: flex;
         flex-direction:row;
         align-items: center;
-        width: 80vw;
+        width: 50vw;
     }
 
     hgroup h4{
@@ -1340,7 +1345,7 @@ header{
         font-size: 14px;
         color: rgb(86, 86, 86);
         text-align: center;
-        width: 80vw;
+        width: 50vw;
         padding: 20px 0;
         border-bottom: thin solid grey;
     }
@@ -1410,6 +1415,7 @@ header{
         display: flex;
         flex-direction: column;
         align-items:flex-start ;
+        width: 30vw;
     }
 
     /*---------------> download the extension <-------------- */
