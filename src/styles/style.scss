@@ -1,0 +1,21 @@
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+
+@import 'base/reset';
+@import 'base/typography';
+
+
+@import 'layout/header';
+@import 'layout/footer';
+
+
+@import 'components/buttons';
+@import 'components/rrss-icons';
+
+
+@import 'pages/hero';
+@import 'pages/features'; // Aquí iría toda la lógica anidada del carrusel.
+@import 'pages/faq';
+@import 'pages/contact';
