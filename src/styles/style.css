@@ -233,6 +233,7 @@ header{
         margin: 20px 0 90px;
         display: flex;
         justify-content: center;
+        
 
     }
     #img-1, #img-2{
@@ -248,7 +249,7 @@ header{
     .img-container #forma {
         position: absolute;
         background-color: blue;
-        height: 20vh;
+        height: 180px;
         width: 80vw;
         right: 0;
         margin-top: 15%;
@@ -727,6 +728,7 @@ header{
         background-color: blue;
         height: 20vh;
         width: 40vw;
+        top: 10%;
         right: 0;
         margin-top: 15%;
         border-radius: 100px 0 0 100px;
@@ -840,8 +842,8 @@ header{
     .img-container #forma2 {
         position: absolute;
         background-color: blue;
-        height: 20vh;
-        width: 50vw;
+        height: 15vh;
+        width: 40vw;
         left: 0;
         margin-top: 15%;
         border-radius: 0 100px 100px 0;
@@ -1118,7 +1120,7 @@ header{
         display: flex;
         flex-direction:row;
         background-color: rgb(13, 13, 45);
-        padding: 50px 20px;
+        padding: 10px 20%;
         justify-content: space-between;
         align-items: center;
     }
@@ -1249,17 +1251,14 @@ header{
         box-shadow: 1px 20px 30px 1px rgba(4, 4, 4, 0.267);
     }
 
-    #img-1, #img-2{
-        max-width: 35vw;
-    }
 
     .img-container #forma {
         position: absolute;
         z-index: -6;
         background-color: blue;
-        height: 15vh;
         width: 40vw;
         right: 0;
+        top: 10%;
         margin-top: 15%;
         border-radius: 100px 0 0 100px;
     }
@@ -1366,17 +1365,18 @@ header{
     .img-container #img-2{
         border: none;
         background-color: transparent;
-        width: 90vw;
+        width: 40vw;
         margin-right: 40px;
+        max-width: 30vh;
     }
 
     .img-container #forma2 {
         position: absolute;
         background-color: blue;
         height: 15vh;
-        width: 50vw;
+        width: 40vw;
         left: 0;
-        margin-top: 15%;
+        margin-top: 10%;
         border-radius: 0 100px 100px 0;
     }
 
@@ -1654,7 +1654,7 @@ header{
         display: flex;
         flex-direction:row;
         background-color: rgb(13, 13, 45);
-        padding: 50px 50px;
+        padding: 10px 10%;
         align-items: center;
     }
 
