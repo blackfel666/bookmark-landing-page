@@ -11,7 +11,7 @@ Estilos Modulares: Uso de clases e IDs claros para una fácil depuración y mant
 ### 🛠️ Tecnologías Utilizadas
 Este proyecto fue construido utilizando únicamente tecnologías fundamentales de la web.
 
-HTML5: Estructura semántica del contenido, incluyendo elementos modernos como <hgroup>, <figure>, y atributos ARIA.
+HTML5: Estructura semántica del contenido, incluyendo elementos modernos como `<hgroup>`, `<figure>`, y atributos ARIA.
 
 CSS3: Estilizado, diseño responsivo y la lógica completa para la funcionalidad de pestañas.
 
@@ -47,7 +47,7 @@ open index.html
 ### 📂 Estructura del Proyecto
 La estructura del directorio es la siguiente:
 
-bookmark-landing-page/
+```bookmark-landing-page/
 ├── index.html          # Estructura principal de la página
 ├── src/
 │   ├── assets/         # Contiene todas las imágenes
@@ -57,6 +57,7 @@ bookmark-landing-page/
 │   └── styles/
 │       └── style.css   # Todos los estilos y media queries
 └── README.md
+```
 
 ### ✍️ Autor
 [Blackfel666 / Yohann Velasquez] - Desarrollo Front-End
