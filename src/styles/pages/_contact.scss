@@ -1,0 +1,121 @@
+@media only screen and (min-width: 320px) {
+    #contact-us {
+        background-color: var(--color-primary);
+        padding: 60px 0;
+        color: var(--color-text-white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact-us h4 {
+        font-weight: lighter;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+        border: none;
+        color: var(--color-text-white);
+    }
+
+    #formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    #form-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #email {
+        width: 80vw;
+        padding: 10px;
+    }
+
+    #formulario .error {
+        color: var(--color-text-white);
+        width: 80vw;
+        font-size: 14px;
+        display: none;
+        text-align: left;
+        padding: 3px;
+        border: 5px solid var(--color-accent);
+        background-color: var(--color-accent);
+        border-radius: 0 0 10px 10px;
+    }
+
+    input:invalid {
+        border: 5px solid var(--color-accent);
+        border-radius: 5px 5px 0 0;
+        background-image: url(../assets/images/icon-error.svg);
+        background-position: center right 10px;
+        background-repeat: no-repeat;
+    }
+
+    #contact-us-btn {
+        background-color: var(--color-accent);
+        color: var(--color-text-white);
+        width: 80vw;
+        box-shadow: none;
+        margin: 30px 10px;
+        font-size: 0.7em;
+        padding: 13px 0;
+    }
+
+    #contact-us-btn:hover {
+        background-color: var(--color-text-white);
+        color: var(--color-accent);
+    }
+}
+
+@media only screen and (min-width: 426px) {
+    
+     #contact-us {
+        padding: 30px 0;
+    }
+
+    #hgroup5 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 60vw; 
+        margin: 0; 
+    }
+
+    #contact-us h1 {
+        width: 40vw;
+    }
+
+    #form-btn {
+        flex-direction: row;
+    }
+
+    #email {
+        width: 40vw;
+    }
+
+    #formulario .error {
+        width: 40vw;
+    }
+
+    #contact-us-btn {
+        width: 15vw;
+        height: 40px;
+        margin-left: 5%;
+    }
+
+    #contact-us-btn:hover {
+        border: thin solid var(--color-accent);
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+    
+    #contact-us h1 {
+        width: 35vw;
+    }
+}

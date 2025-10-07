@@ -1,0 +1,112 @@
+:root {
+    /* Colores principales */
+    --color-primary: blue;
+    --color-accent: red;
+    
+    /* Colores de texto */
+    --color-text-white: white;
+    --color-text-black: black;
+    --color-text-gray: rgb(86, 86, 86);
+    --color-text-light-gray: rgb(184, 184, 184);
+    --color-text-medium-gray: grey;
+    
+    /* Colores de fondo */
+    --bg-dark: rgba(5, 1, 29, 0.938);
+    --bg-footer: rgb(13, 13, 45);
+    --bg-white: rgb(236, 235, 235);
+    
+    /* Colores de borde */
+    --border-white-alpha: rgba(255, 255, 255, 0.384);
+    
+    /* Tipografía */
+    --font-primary: "puppy", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0 auto;
+    padding-top: 3%;
+}
+
+h1 { 
+    width: 80vw;
+    font-size: 1.3em;
+}
+
+h2 { 
+    font-size: 1.5em;
+    color: var(--color-text-light-gray);
+}
+
+h3 { 
+    margin-top: 15px;
+    width: 80vw;
+    font-size: 0.75em;
+    color: var(--color-text-light-gray);
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+p { 
+    font-size: 0.70em;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 100vw;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.open-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav {
+    display: flex;
+    justify-content: right;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-list li a {
+    text-decoration: none;
+}
+
+.close-menu,
+.open-menu {
+    display: none;
+}
+
+.feature-img { 
+    display: none; 
+}
+
+.feature-img.active { 
+    display: block; 
+}
+
+.img-container #forma {
+    z-index: -6;
+}
+
+ #hgroup2, #hgroup3, #hgroup4 {
+        margin-top: 0;
+    }
