@@ -62,18 +62,18 @@ header {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
 
-            .nav-list li a {
-                color: $color-text-white;
-        }
+    .nav-list li a {
+        color: $color-text-white;
+    }
 
-            li {
-                padding: 15px 0;
-                border-top-width: 0.5px;
-                border-top-style: solid;
-                color: $border-white-alpha;
-                width: 80vw;
-            }
+    li {
+        padding: 15px 0;
+        border-top-width: 0.5px;
+        border-top-style: solid;
+        color: $border-white-alpha;
+        width: 80vw;
     }
 
 

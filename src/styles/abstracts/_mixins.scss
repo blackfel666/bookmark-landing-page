@@ -30,9 +30,10 @@
     background-color: $color-primary;
 }
 
-@mixin button-hover($bg-color, $text-color: white){
+@mixin button-hover($bg-color, $text-color: white, $btn-border:none){
     background-color: $bg-color;
     color: $text-color;
+    border: $btn-border;
 }
 
 @mixin section-base($bg-color){
@@ -43,13 +44,14 @@
     background-color: $bg-color;
 }
 
-@mixin flex-aling ($justify: flex-start) {
+@mixin flex-aling ($justify: flex-start, $flex-direction:column) {
     display: flex;
     justify-content: $justify;
+    flex-direction: $flex-direction;
 }
 
 @mixin primary-text($tx-aling, $mg-bottom, $font-size){
-    width: 80vw;
+    width: 40vw;
     font-size: $font-size;
     text-align: $tx-aling;
     margin-bottom: $mg-bottom;
@@ -62,13 +64,51 @@
     margin-bottom: $mg-bottom;
 }
 
-@mixin tertiary-text($tx-aling, $mg-bottom, $font-size){ 
+@mixin tertiary-text($tx-aling, $mg-bottom, $font-size, $h3-width:90vw){ 
     margin-top: 15px;
-    width: 90vw;
+    width: $h3-width;
     color: $color-text-light-gray;
     font-weight: normal;
     line-height: 1.5;
     font-size: $font-size;
     text-align: $tx-aling;
     margin-bottom: $mg-bottom;
+}
+
+@mixin img-container($margin, $box-shadow){
+    margin: $margin;
+    box-shadow: $box-shadow;
+    border-radius: 30px;
+}
+
+@mixin forma($forma-height:180px, $forma-width:80vw, $forma-top:15%){
+    position: absolute;
+    background-color: $color-primary;
+    height: $forma-height;
+    width: $forma-width;
+    top: $forma-top;
+    right: 0;
+    margin-top: 15%;
+    border-radius: 100px 0 0 100px;
+    z-index: -6;
+}
+
+@mixin img-commons ($max-width:70vw){
+    max-width: $max-width;
+    border-color: $color-text-black;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 30px;
+    background-color: $color-text-black;
+}
+
+@mixin hgroup-commons(){
+    width: 40vw;
+    margin-right: 5%;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
 }

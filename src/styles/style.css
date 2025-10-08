@@ -43,7 +43,7 @@ ul {
 
 @media only screen and (min-width: 320px) {
   h1 {
-    width: 80vw;
+    width: 40vw;
     font-size: 1.5em;
     text-align: center;
     margin-bottom: none;
@@ -94,16 +94,19 @@ header {
 .logo {
   display: flex;
   justify-content: flex-start;
+  flex-direction: column;
 }
 
 .open-menu {
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
 }
 
 .nav {
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
 }
 
 .close-menu,
@@ -145,10 +148,10 @@ header {
     align-items: center;
     text-align: center;
   }
-  .nav-list .nav-list li a {
+  .nav-list li a {
     color: white;
   }
-  .nav-list li {
+  li {
     padding: 15px 0;
     border-top-width: 0.5px;
     border-top-style: solid;
@@ -218,7 +221,7 @@ header {
     filter: invert(42%) sepia(100%) saturate(1352%) hue-rotate(-50deg) brightness(90%) contrast(119%);
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   h1 {
     font-size: 1.8em;
   }
@@ -359,10 +362,7 @@ button {
 button:hover {
   background-color: blue;
   color: white;
-}
-
-.container {
-  max-width: 100vw;
+  border: none;
 }
 
 @media only screen and (min-width: 320px) {
@@ -380,18 +380,20 @@ button:hover {
     margin-bottom: 90px;
     margin-top: 15%;
   }
-  /*---------------> simple-bookmark-manager <-------------- */
   .img-container {
     margin: 20px 0 90px;
+    box-shadow: none;
+    border-radius: 30px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
   #img-1, .img-2 {
     max-width: 70vw;
     border-color: black;
     border-style: solid;
     border-width: 10px;
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: black;
   }
   .img-container #forma {
@@ -399,6 +401,7 @@ button:hover {
     background-color: blue;
     height: 180px;
     width: 80vw;
+    top: 19%;
     right: 0;
     margin-top: 15%;
     border-radius: 100px 0 0 100px;
@@ -421,25 +424,19 @@ button:hover {
   }
 }
 @media only screen and (min-width: 426px) {
-  .img-container {
-    margin: 10px 10px 90px 0;
-    box-shadow: 1px 20px 30px 1px rgba(4, 4, 4, 0.267);
-  }
-  .img-container .img-container #forma {
-    height: 30vh;
-    width: 40vw;
-    top: 15%;
-  }
-  #img-1, .img-2 {
-    max-width: 40vw;
-  }
-  #simple1 {
-    width: 50vw;
+  #simple-bookmark-manager {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: none;
+    flex-direction: row-reverse;
+    padding: 0 10%;
   }
-  #hgroup1 {
+  #simple-bookmark-manager #simple1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 50vw;
+  }
+  #simple-bookmark-manager #simple1 #hgroup1 {
     width: 40vw;
     margin-right: 5%;
     margin-top: 0;
@@ -447,20 +444,70 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: left;
   }
-  #hgroup1 #hgroup1 h1 {
+  #simple-bookmark-manager #simple1 #hgroup1 h1 {
     width: 40vw;
-    margin: 0;
-    padding: 0;
-  }
-  #hgroup1 #hgroup1 h3 {
+    font-size: 1.5em;
     text-align: left;
-    margin: 20px 0;
-    color: var(--color-text-light-gray);
+    margin-bottom: 0;
   }
-  #simple-bookmark-manager .boton {
+  #simple-bookmark-manager #simple1 #hgroup1 h3 {
+    margin-top: 15px;
+    width: 35vw;
+    color: rgb(184, 184, 184);
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: 0.9em;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  #simple-bookmark-manager #simple1 .boton {
     justify-content: flex-start;
     margin: 0;
+  }
+  #simple-bookmark-manager #simple1 .boton button {
+    font-size: 0.7em;
+    font-weight: bold;
+    padding: 15px 15px;
+    border-radius: 5px;
+    border: 2px;
+    box-shadow: 10px;
+    color: white;
+    box-shadow: lightblue;
+    background-color: blue;
+  }
+  #simple-bookmark-manager #simple1 .boton button:hover {
+    background-color: white;
+    color: blue;
+    border: thin solid blue;
+  }
+  #simple-bookmark-manager .img-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 10px 10px 90px 0;
+    box-shadow: 1px 20px 30px 1px rgba(4, 4, 4, 0.267);
+    border-radius: 30px;
+  }
+  #simple-bookmark-manager .img-container #forma {
+    position: absolute;
+    background-color: blue;
+    height: 30vh;
+    width: 40vw;
+    top: 15%;
+    right: 0;
+    margin-top: 15%;
+    border-radius: 100px 0 0 100px;
+    z-index: -6;
+  }
+  #img-1, .img-2 {
+    max-width: 50vw;
+    border-color: black;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 30px;
+    background-color: black;
   }
   #simple-bookmark-manager button {
     margin: 10px 20px 0 0;
@@ -471,7 +518,7 @@ button:hover {
     color: var(--color-primary);
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .img-container {
     margin: 10px 10px 90px 0;
     box-shadow: 1px 20px 30px 1px rgba(4, 4, 4, 0.267);
