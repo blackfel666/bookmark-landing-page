@@ -1,0 +1,74 @@
+@mixin respond-to($breakpoint) {
+
+    @if $breakpoint == extra-small {
+        @media only screen and (min-width: $bp-xs-min) {
+            @content;
+        }
+    } @else if $breakpoint == small {
+        @media only screen and (min-width: $bp-sm-min) {
+            @content;
+        }
+    } @else if $breakpoint == medium {
+        @media only screen and (min-width: $bp-md-min) {
+            @content;
+        }
+    } @else {
+        @warn "El breakpoint '#{$breakpoint}' no está definido en _mixins.scss.";
+    }
+}
+
+
+@mixin button-base($text-color: white, $shadow-color: lightblue) {
+    font-size: 0.70em;
+    font-weight: bold;
+    padding: 15px 15px;
+    border-radius: 5px;
+    border: 2px;
+    box-shadow: 10px;
+    color: $text-color;
+    box-shadow: $shadow-color;
+    background-color: $color-primary;
+}
+
+@mixin button-hover($bg-color, $text-color: white){
+    background-color: $bg-color;
+    color: $text-color;
+}
+
+@mixin section-base($bg-color){
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: $bg-color;
+}
+
+@mixin flex-aling ($justify: flex-start) {
+    display: flex;
+    justify-content: $justify;
+}
+
+@mixin primary-text($tx-aling, $mg-bottom, $font-size){
+    width: 80vw;
+    font-size: $font-size;
+    text-align: $tx-aling;
+    margin-bottom: $mg-bottom;
+}
+
+@mixin secundary-text($tx-aling, $mg-bottom, $font-size){
+    color: $color-text-light-gray;
+    font-size: $font-size;
+    text-align: $tx-aling;
+    margin-bottom: $mg-bottom;
+}
+
+@mixin tertiary-text($tx-aling, $mg-bottom, $font-size){ 
+    margin-top: 15px;
+    width: 90vw;
+    color: $color-text-light-gray;
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: $font-size;
+    text-align: $tx-aling;
+    margin-bottom: $mg-bottom;
+}

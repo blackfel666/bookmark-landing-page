@@ -1,24 +1,17 @@
-h1 { 
-    width: 80vw;
-    font-size: 1.3em;
-}
+* {font-family: $font-primary;}
 
-h2 { 
-    font-size: 1.5em;
-    color: var(--color-text-light-gray);
-}
 
-h3 { 
-    margin-top: 15px;
-    width: 80vw;
-    font-size: 0.75em;
-    color: var(--color-text-light-gray);
-    font-weight: normal;
-    line-height: 1.5;
-}
 
-p { 
-    font-size: 0.70em;
+@include respond-to(extra-small) {
+
+    h1 {@include primary-text(center,none, 1.5em);}
+
+    h2 {@include secundary-text(center,none,0.90em)}
+
+    h3 {@include tertiary-text(center, none, 0.80em)}
+
+    p { font-size: 0.70em;}
+
 }
 
 @media only screen and (min-width: 769px) {
