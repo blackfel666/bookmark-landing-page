@@ -1,0 +1,180 @@
+@include respond-to(extra-small)  {
+    #hgroup2, #hgroup3, #hgroup4 {
+        margin-top: 0;
+    }
+
+    .add-extension {
+        width: 80vw;
+        margin-bottom: 30px;
+        padding: 50px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 2px 15px 20px 1px rgb(221, 221, 221);
+    }
+
+    article h1 {
+        margin-top: 20px;
+    }
+
+    article h2 {
+        font-size: 1em;
+        margin: 0px 0 40px;
+    }
+
+    figure figcaption {
+        display: none;
+    }
+
+    .dots img {
+        width: 70vw;
+    }
+
+    article.add-extension button {
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+        font-size: 1.3em;
+        text-align: center;
+        padding: 20px 30px;
+    }
+
+}
+@include respond-to(small)  {
+
+    #download-the-extension {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #hgroup3 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        width: 100vw;
+    }
+
+    #add-2 { margin-top: 60px; }
+    #add-3 { margin-top: 120px; }
+
+    .add-extension {
+        width: 29vw;
+        margin: 0 10px;
+        padding: 50px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 2px 15px 20px 1px rgb(221, 221, 221);
+    }
+
+    article h1 {
+        font-size: 1.2em;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    article h2 {
+        font-size: 0.7em;
+        color: $color-text-medium-gray;
+        margin: 13px 0 40px;
+    }
+
+    figure figcaption {
+        display: none;
+    }
+
+    .dots img {
+        width: 25vw;
+    }
+
+    article.add-extension button {
+        width: 25vw;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        font-size: 1em;
+        text-align: center;
+        padding: 20px 30px;
+    }
+
+    article.add-extension button:hover {
+        background-color: $color-text-white;
+        box-shadow: none;
+        border: thin solid $color-primary;
+        color: $color-primary;
+    }
+
+}
+@include respond-to(medium)  {
+    #download-the-extension {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        padding: 30px 0;
+    }
+
+    #hgroup3 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        width: 100vw;
+    }
+
+    #add-2 { margin-top: 60px; }
+    #add-3 { margin-top: 120px; }
+
+    .add-extension {
+        width: 20vw;
+        margin: 0 10px;
+        padding: 50px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 2px 15px 20px 1px rgb(221, 221, 221);
+    }
+
+    article h1 {
+        font-size: 1.2em;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    article h2 {
+        font-size: 0.8em;
+        color: $color-text-medium-gray;
+        margin: 13px 0 40px;
+    }
+
+    figure figcaption {
+        display: none;
+    }
+
+    .dots img {
+        width: 25vw;
+    }
+
+    article.add-extension button {
+        width: 15vw;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        font-size: 0.8em;
+        text-align: center;
+        padding: 20px 20px;
+    }
+
+    article.add-extension button:hover {
+        background-color: $color-text-white;
+        box-shadow: none;
+        border: thin solid $color-primary;
+        color: $color-primary;
+    }
+}

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 320px) {
+@include respond-to(extra-small) {
 
     #faqs {
         display: flex;
@@ -41,7 +41,7 @@
         color: var(--color-text-gray);
         width: 85vw;
         padding: 20px 0;
-        border-bottom: thin solid var(--color-text-light-gray);
+        border-bottom: thin solid $color-text-light-gray;
     }
 
     details summary.questions {
@@ -58,7 +58,7 @@
         text-align: left;
         font-size: 0.9em;
         font-weight: bold;
-        color: var(--color-text-light-gray);
+        color: $color-text-light-gray;
         line-height: 25px;
         padding: 10px 0;
         width: 80vw;
@@ -71,7 +71,14 @@
     }
 }
 
-@media only screen and (min-width: 426px) {
+@include respond-to(small) {
+
+    #hgroup4 {
+        flex-direction: column;
+        width: 70vw;
+        margin: 30px 0; 
+        text-align: center;
+    }
     
     details[open] summary::after {
         filter: hue-rotate(100deg);
@@ -95,11 +102,12 @@
         margin-top: 60px;
         font-size: 1em;
     }
+
 }
 
-@media only screen and (min-width: 769px) {
+@include respond-to(medium) {
     
-     #hgroup4 {
+    #hgroup4 {
         width: 50vw;
         margin: 30px 0; 
     }

@@ -4,17 +4,35 @@
 
 @include respond-to(extra-small) {
 
-    h1 {@include primary-text(center,none, 1.5em);}
+    h1 {@include primary-text(50vw,center, 5%, 1.5em);}
 
-    h2 {@include secundary-text(center,none,0.90em)}
+    h2 {@include secundary-text(center, none, 0.90em)}
 
     h3 {@include tertiary-text(center, none, 0.80em)}
 
-    p { font-size: 0.70em;}
+    p { @include pharagrap()}
 
 }
 
-@media only screen and (min-width: 769px) {
-    h1 { font-size: 1.8em; }
-    h3 { font-size: 1em; }
+@include respond-to(small) {
+
+    h1 {@include primary-text(50vw,center, 5%, 1.8em);}
+
+    h2 {@include secundary-text(center, none, 1.3em)}
+
+    h3 {@include tertiary-text(center, none, 1em)}
+
+    p { @include pharagrap()}
 }
+
+@include respond-to(medium) {
+
+    h1 {@include primary-text(60vw,center, 5%, 1.8em);}
+
+    h2 {@include secundary-text(center, none, 1.5em)}
+
+    h3 {@include tertiary-text(center, none, 1em)}
+
+    p { @include pharagrap()}
+}
+

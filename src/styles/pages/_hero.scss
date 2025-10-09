@@ -4,7 +4,7 @@
 
 
     section {
-        @include section-base($bg-color:none);
+        @include section-base(none);
     }
 
     #simple-bookmark-manager, 
@@ -16,11 +16,11 @@
     }
 
     .img-container {
-        @include img-container($margin:20px 0 90px, $box-shadow:none);
+        @include img-container($margin:20px 0 90px, $box-shadow:none, $b-radius:10px);
         @include flex-aling ($justify: center);
     }
 
-    #img-1, .img-2 {@include img-commons ()}
+    .img-container #img-1 {@include img-commons (80vw)}
 
     .img-container #forma {
         @include forma($forma-height:180px, $forma-width:80vw, $forma-top:19%)}
@@ -52,16 +52,16 @@
         @include flex-aling (none, row-reverse);
         padding: 0 10%;
 
-        #simple1 { 
-            @include flex-aling (flex-start, column);
-            width: 50vw;
+        .img-container {
+            max-width: 30vw;
+        }
+
+        #simple1 { @include flex-aling (flex-start, column);}
             
 
-                #hgroup1 {
-                    @include hgroup-commons();
-                    h1{@include primary-text(left, 0, 1.5em);}
-                    h3{@include tertiary-text(left, 0, 0.9em, 35vw);}
-                }
+        h1,h3{text-align: left}
+        
+        #hgroup1 {@include hgroup-commons()}
 
                 .boton {
                     justify-content: flex-start;
@@ -71,24 +71,23 @@
                     button:hover {@include button-hover(white, blue, thin solid blue);}
                 }
 
-        }
-
 
         .img-container {
             @include flex-aling (flex-start);
             @include img-container(
                 $margin:10px 10px 90px 0, 
-                $box-shadow:1px 20px 30px 1px rgba(4, 4, 4, 0.267));
-
-                #forma {@include forma(
+                $box-shadow:1px 20px 30px 1px rgba(4, 4, 4, 0.267),
+                $b-radius:20px
+                );
+        }
+        #img-1 {@include img-commons (100vw)}
+        #forma {@include forma(
                     $forma-height:30vh, 
                     $forma-width:40vw, 
                     $forma-top:15%)
                 }
-        }  
-    }
 
-    #img-1, .img-2 {@include img-commons ($max-width:50vw)}
+    }
 
 
     #simple-bookmark-manager button {

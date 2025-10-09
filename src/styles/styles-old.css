@@ -1,7 +1,6 @@
 :root {
     /* Colores principales */
-    --color-primary: blueviolet;
-    --color-secondary: blue;
+    --color-primary: blue;
     --color-accent: red;
     
     /* Colores de texto */
@@ -131,7 +130,11 @@ header {
     z-index: -6;
 }
 
-@media only screen and (max-width: 425px) {
+ #hgroup2, #hgroup3, #hgroup4 {
+        margin-top: 0;
+    }
+
+@media only screen and (min-width: 320px) {
     .close-menu,
     .open-menu {
         display: block;
@@ -232,6 +235,8 @@ header {
         box-shadow: none;
     }
 
+    /*---------------------------> body <------------------------ */
+
     section {
         display: flex;
         justify-content: center;
@@ -246,6 +251,8 @@ header {
         margin-bottom: 90px;
         margin-top: 15%;
     }
+
+    /*---------------> simple-bookmark-manager <-------------- */
 
     .img-container {
         margin: 20px 0 90px;
@@ -264,7 +271,7 @@ header {
 
     .img-container #forma {
         position: absolute;
-        background-color: var(--color-secondary);
+        background-color: var(--color-primary);
         height: 180px;
         width: 80vw;
         right: 0;
@@ -294,6 +301,8 @@ header {
         margin: 10px;
     }
 
+    /*---------------> features <-------------- */
+
     #features {
         margin-bottom: 70px;
     }
@@ -322,6 +331,8 @@ header {
         box-shadow: inset 0 -10px 0px -6px var(--color-accent);
     }
 
+    /*---------------> bookmark in one click <-------------- */
+
     .img-container .img-2 {
         border: none;
         border-radius: 0;
@@ -331,7 +342,7 @@ header {
     .img-container #forma2 {
         position: absolute;
         z-index: 0;
-        background-color: var(--color-secondary);
+        background-color: var(--color-primary);
         height: 20vh;
         width: 80vw;
         left: 0;
@@ -350,9 +361,7 @@ header {
         display: none;
     }
 
-    #hgroup2, #hgroup3, #hgroup4 {
-        margin-top: 0;
-    }
+    /*---------------> download the extension <-------------- */
 
     .add-extension {
         width: 80vw;
@@ -387,9 +396,16 @@ header {
         display: flex;
         justify-content: center;
         margin: 30px 0;
-        font-size: 1.3em;
+        font-size: 0.9em;
         text-align: center;
         padding: 20px 30px;
+    }
+
+    /*---------------> faqs <-------------- */
+
+    #faqs {
+        display: flex;
+        align-items: center;
     }
 
     summary {
@@ -457,8 +473,10 @@ header {
         font-size: 1.4em;
     }
 
+    /*---------------> contact us <-------------- */
+
     #contact-us {
-        background-color: var(--color-secondary);
+        background-color: var(--color-primary);
         padding: 60px 0;
         color: var(--color-text-white);
         display: flex;
@@ -528,6 +546,8 @@ header {
         color: var(--color-accent);
     }
 
+    /*---------------> footer <-------------- */
+
     footer {
         display: flex;
         flex-direction: column;
@@ -548,7 +568,7 @@ header {
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
-        color: var(--color-text-light-gray);
+        color: var(--color-text-white);
         list-style: none;
         border: none;
         font-weight: bold;
@@ -566,163 +586,65 @@ header {
 }
 
 @media only screen and (min-width: 426px) {
-    .close-menu,
-    .open-menu {
-        display: block;
-        box-shadow: none;
-    }
-
-    .open-menu {
-        width: 10px;
-        background-color: transparent;
-        margin-left: auto;
-    }
 
     .nav {
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        padding: 2rem 0 0;
-        background-color: var(--bg-dark);
-        visibility: hidden;
         width: 50vw;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-        z-index: 1;
-    }
-
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .nav-list {
-        margin: 10px 5px 20px 5px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .nav-list li a {
-        color: var(--color-text-white);
     }
 
     li {
-        padding: 15px 0;
-        border-top-width: 0.5px;
-        border-top-style: solid;
-        color: var(--border-white-alpha);
         width: 40vw;
-    }
-
-    header a {
-        text-decoration: none;
-        color: var(--color-text-white);
-    }
-
-    #menu-logo {
-        filter: invert(100%) grayscale(100%) brightness(200%);
     }
 
     nav .login {
-        border-radius: 0;
-        background-color: transparent;
-        border-color: var(--color-text-white);
-        border-style: solid;
-        border-width: 1px;
-        color: var(--color-text-white);
         width: 40vw;
         padding: 10px;
-        box-shadow: none;
     }
 
     nav .logo-boton {
         width: 40vw;
-        padding: 10px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-    nav .close-menu {
-        display: block;
-        background-color: transparent;
-        border-radius: 0;
-        margin: 0;
-    }
-
-    .rr-ss {
-        margin-top: auto;
-        margin-bottom: 60px;
-    }
-
-    .facebook,
-    .twitter {
-        background-color: transparent;
-        width: 70px;
-        padding: 5px;
-        box-shadow: none;
     }
 
     .facebook:hover,
     .twitter:hover {
         filter: invert(42%) sepia(100%) saturate(1352%) hue-rotate(-50deg) brightness(90%) contrast(119%);
-        background-color: transparent;
     }
 
-    section {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
+    /*---------------------------> body <------------------------ */
+
 
     #simple-bookmark-manager, 
     #bookmark-one-click,
     #download-the-extension,
     #faqs {
-        margin-bottom: 90px;
         margin-top: 10%;
     }
 
     #simple-bookmark-manager {
         display: flex;
         flex-direction: row-reverse;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
     }
 
+     /*---------------> simple-bookmark-manager <-------------- */
+
     .img-container {
         margin: 10px 10px 90px 0;
-        display: flex;
-        justify-content: center;
         box-shadow: 1px 20px 30px 1px rgba(4, 4, 4, 0.267);
     }
 
     #img-1, .img-2 {
         max-width: 40vw;
-        border-color: var(--color-text-black);
-        border-style: solid;
-        border-width: 10px;
-        border-radius: 20px;
     }
 
     .img-container #forma {
-        position: absolute;
-        z-index: -6;
-        background-color: var(--color-secondary);
-        height: 20vh;
+        height: 30vh;
         width: 40vw;
-        top: 10%;
-        right: 0;
-        margin-top: 15%;
-        border-radius: 100px 0 0 100px;
+        top: 15%;
     }
 
     #simple1 {
+        width: 50vw;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -735,6 +657,7 @@ header {
         padding: 0;
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     #hgroup1 h1 {
@@ -746,23 +669,25 @@ header {
     #hgroup1 h3 {
         text-align: left;
         margin: 20px 0;
-        color: var(--color-text-medium-gray);
+        color: var(--color-text-light-gray);
     }
 
     #simple-bookmark-manager .boton {
-        display: flex;
+        justify-content: flex-start;
         margin: 0;
     }
 
     #simple-bookmark-manager button {
-        margin-right: 10px;
+        margin: 10px 20px 0 0;
     }
 
     #simple-bookmark-manager button:hover {
         background-color: var(--color-text-white);
-        border: thin solid var(--color-secondary);
-        color: var(--color-secondary);
+        border: thin solid var(--color-primary);
+        color: var(--color-primary);
     }
+
+    /*---------------> features <-------------- */
 
     #features {
         margin-bottom: 10px;
@@ -779,26 +704,21 @@ header {
     }
 
     hgroup {
-        margin-top: 40px;
-        display: flex;
         flex-direction: row;
         align-items: center;
+        margin-top: 40px;
         width: 80vw;
     }
 
     hgroup h4 {
-        font-weight: bold;
-        font-size: 14px;
-        color: var(--color-text-gray);
-        text-align: center;
-        width: 80vw;
-        padding: 20px 0;
-        border-bottom: thin solid var(--color-text-medium-gray);
+        font-size: 1em;
     }
 
     hgroup h4:hover {
         box-shadow: inset 0 -10px 0px -6px var(--color-accent);
     }
+
+    /*---------------> bookmark in one click <-------------- */
 
     #bookmark-one-click {
         display: flex;
@@ -806,6 +726,10 @@ header {
         flex-direction: row;
         justify-content: center;
         margin-top: 60px;
+    }
+
+    #bookmark {
+        align-items: flex-start;
     }
 
     .img-container {
@@ -823,7 +747,7 @@ header {
 
     .img-container #forma2 {
         position: absolute;
-        background-color: var(--color-secondary);
+        background-color: var(--color-primary);
         height: 15vh;
         width: 40vw;
         left: 0;
@@ -849,11 +773,7 @@ header {
         margin: 20px 0;
     }
 
-    #bookmark {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+    /*---------------> download the extension <-------------- */
 
     #download-the-extension {
         text-align: center;
@@ -875,28 +795,17 @@ header {
     .add-extension {
         width: 29vw;
         margin: 0 10px;
-        padding: 50px 0 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 20px;
-        box-shadow: 2px 15px 20px 1px rgb(221, 221, 221);
     }
 
     article h1 {
         font-size: 1.2em;
-        margin-top: 20px;
         text-align: center;
+        margin-bottom: 5px;
     }
 
     article h2 {
         font-size: 0.7em;
         color: var(--color-text-medium-gray);
-        margin: 13px 0 40px;
-    }
-
-    figure figcaption {
-        display: none;
     }
 
     .dots img {
@@ -906,23 +815,15 @@ header {
     article.add-extension button {
         width: 25vw;
         display: flex;
-        justify-content: center;
         margin: 20px 0;
-        font-size: 1em;
-        text-align: center;
-        padding: 20px 30px;
+        font-size: 0.7em;
     }
 
     article.add-extension button:hover {
         background-color: var(--color-text-white);
         box-shadow: none;
-        border: thin solid var(--color-secondary);
-        color: var(--color-secondary);
-    }
-
-    #faqs {
-        display: flex;
-        align-items: center;
+        border: thin solid var(--color-primary);
+        color: var(--color-primary);
     }
 
     #hgroup4 {
@@ -936,80 +837,35 @@ header {
         width: 60vw;
     }
 
-    summary {
-        list-style: none;
-        display: flex; 
-        justify-content: space-between; 
-        align-items: center;
-    }
-
-    summary::marker,
-    summary::-webkit-details-marker {
-        content: "";
-        display: none;
-    }
-
-    summary::after {
-        content: "";
-        margin-left: 10px; 
-        transition: transform 0.25s ease; 
-        font-weight: bold;
-        background: url(../assets/images/icon-arrow.svg) no-repeat center center;
-        background-size: contain;
-        width: 20px; 
-        height: 20px; 
-        display: inline-block;  
-        margin-left: 10px;
-    }
+    /*---------------> faqs <-------------- */
 
     details[open] summary::after {
-        transform: rotate(180deg);
         filter: hue-rotate(100deg);
     }
 
     details summary {
-        list-style-type: disc;
-        font-weight: bold;
-        color: var(--color-text-gray);
         width: 50vw;
-        padding: 20px 0;
-        border-bottom: thin solid var(--color-text-light-gray);
-    }
-
-    details summary.questions {
-        text-align: left;
     }
 
     details[open] summary.questions {
-        list-style-type: square;
-        border-bottom: 2px;
-        margin: 0 auto;
         color: var(--color-accent);
     }  
 
     details p {
-        text-align: left;
         font-size: 1em;
-        font-weight: bold;
-        color: var(--color-text-medium-gray);
-        line-height: 25px;
-        padding: 10px 0;
         width: 50vw;
     }
 
     #faqs .boton {
         padding: 15px 30px;
         margin-top: 60px;
-        font-size: 1.4em;
+        font-size: 1em;
     }
 
+    /*---------------> contact us <-------------- */
+
     #contact-us {
-        background-color: var(--color-secondary);
         padding: 30px 0;
-        color: var(--color-text-white);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     #hgroup5 {
@@ -1020,121 +876,59 @@ header {
         margin: 0; 
     }
 
-    #contact-us h4 {
-        font-weight: lighter;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        margin-bottom: 20px;
-        border: none;
-        color: var(--color-text-white);
-    }
-
     #contact-us h1 {
         width: 40vw;
     }
 
-    #formulario {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     #form-btn {
-        display: flex;
         flex-direction: row;
-        justify-content: center;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        width: 80vw;
     }
 
     #email {
-        padding: 10px;
         width: 40vw;
     }
 
     #formulario .error {
-        color: var(--color-text-white);
         width: 40vw;
-        font-size: 14px;
-        display: none;
-        text-align: left;
-        padding: 3px;
-        border: 5px solid var(--color-accent);
-        background-color: var(--color-accent);
-        border-radius: 0 0 10px 10px;
-    }
-
-    input:invalid {
-        border: 5px solid var(--color-accent);
-        border-radius: 5px 5px 0 0;
-        background-image: url(../assets/images/icon-error.svg);
-        background-position: center right 10px;
-        background-repeat: no-repeat;
     }
 
     #contact-us-btn {
-        background-color: var(--color-accent);
-        color: var(--color-text-white);
         width: 15vw;
         height: 40px;
-        box-shadow: none;
-        font-size: 0.7em;
-        padding: 13px 0;
         margin-left: 5%;
     }
 
     #contact-us-btn:hover {
-        background-color: var(--color-text-white);
-        color: var(--color-accent);
         border: thin solid var(--color-accent);
     }
 
-    footer {
-        display: flex;
-        flex-direction: row;
-        background-color: var(--bg-footer);
-        padding: 10px 20%;
-        justify-content: space-between;
-        align-items: center;
-    }
+    /*---------------> footer <-------------- */
 
-    footer #logo {
-        filter: hue-rotate(180deg) invert(100%);   
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 30px;
     }
 
     #footer-nav {
-        display: flex;
+        margin-top: 0;
         width: 50vw;
     }
 
     #footer-nav ul {
         display: flex;
-        width: 50vw;
-        justify-content: center;
+        justify-content: start;
     }
 
     #footer-nav ul li {
-        color: var(--color-text-white);
-        list-style: none;
-        border: none;
-        letter-spacing: 2px;
         padding: 0 5px;
-        font-size: 0.9em;
-        text-transform: uppercase;
-    }
-
-    footer #rrss {
-        margin: 30px 0;
+        font-size: 0.7em;
+        letter-spacing: 2px;
+        width: 10vw;
     }
 
     .icon-rrss:hover {
         filter: invert(42%) sepia(100%) saturate(1352%) hue-rotate(-50deg) brightness(90%) contrast(119%);
-    }
-
-    figure .icon-rrss {
-        padding: 20px;
-        text-decoration: none;
     }
 }
 
@@ -1157,7 +951,6 @@ header {
     }
 
     .nav {
-        display: flex;
         flex-direction: row;
         right: 10%;
         top: unset;
@@ -1169,7 +962,6 @@ header {
     }
 
     .nav-list {
-        display: flex;
         flex-direction: row;
         margin: 0;
     }
@@ -1184,14 +976,12 @@ header {
     }
 
     li {
-        border-top: none;
-        width: 40vw;
+        border-top: none;  
     }
 
     nav .login {
         background-color: var(--color-accent);
         border-radius: 5px;
-        color: var(--color-text-white);
         width: 10vw;
     }
 
@@ -1209,235 +999,65 @@ header {
         display: none;
     }
 
+    /*---------------> simple-bookmark-manager <-------------- */
+
     .img-container {
         margin: 10px 10px 90px 0;
-        display: flex;
-        justify-content: center;
         box-shadow: 1px 20px 30px 1px rgba(4, 4, 4, 0.267);
     }
 
     .img-container #forma {
-        position: absolute;
-        z-index: -6;
-        background-color: var(--color-secondary);
         width: 40vw;
-        right: 0;
         top: 10%;
-        margin-top: 15%;
-        border-radius: 100px 0 0 100px;
-    }
-
-    #simple1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    #hgroup1 {
-        width: 40vw;
-        margin-top: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #hgroup1 h1 {
-        width: 20vw;
-        margin: 0;
-        padding: 0;
     }
 
     #hgroup1 h3 {
-        font-size: 1em;
-        text-align: left;
-        margin: 20px 0;
-        color: var(--color-text-medium-gray);
-        width: 35vw;
-    }
-
-    #simple-bookmark-manager .boton {
-        display: flex;
-        margin: 0;
-    }
-
-    #simple-bookmark-manager button {
-        margin-right: 10px;
-    }
-
-    #simple-bookmark-manager button:hover {
-        background-color: var(--color-text-white);
-        border: thin solid var(--color-secondary);
-        color: var(--color-secondary);
-    }
-
-    #features {
-        margin-bottom: 10px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #features h1, h3 {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
         width: 50vw;
     }
 
-    hgroup {
-        margin-top: 40px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 50vw;
-    }
+    /*---------------> features <-------------- */
 
-    hgroup h4 {
-        font-weight: bold;
-        font-size: 14px;
-        color: var(--color-text-gray);
-        text-align: center;
-        width: 50vw;
-        padding: 20px 0;
-        border-bottom: thin solid var(--color-text-medium-gray);
-    }
-
-    hgroup h4:hover {
-        box-shadow: inset 0 -10px 0px -6px var(--color-accent);
-    }
-
-    #bookmark-one-click {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: row;
-        margin-top: 60px;
-    }
-
-    .img-container {
-        display: flex;
-        justify-content: flex-start;
-        box-shadow: none;
-    }
+    /*---------------> bookmark in one click <-------------- */
     
-    .img-container .img-2 {
-        border: none;
-        background-color: transparent;
-        width: 40vw;
-        margin-right: 40px;
-        max-width: 30vh;
-    }
-
-    .img-container #forma2 {
-        position: absolute;
-        background-color: var(--color-secondary);
-        height: 15vh;
-        width: 40vw;
-        left: 0;
-        margin-top: 10%;
-        border-radius: 0 100px 100px 0;
-    }
-
-    #hgroup2 {
-        width: 40vw;
-        top: 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #hgroup2 h1, h3 {
-        display: flex;
-        width: 40vw;
-    }
-
-    #hgroup2 h3 {
-        text-align: left;
-        margin: 20px 0;
-    }
-
     #bookmark {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         width: 30vw;
     }
 
+    .img-container {
+        box-shadow: none;
+    }
+
+    .img-container .img-2 {
+        width: 30vw;
+    }
+
+    .img-container #forma2 {
+        height: 25vh;
+        margin-top: 10%;
+    }
+
+    /*---------------> download the extension <-------------- */
+
     #download-the-extension {
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: flex-start;
         padding: 30px 0;
     }
 
-    #hgroup3 {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2%;
-        width: 100vw;
-    }
-
-    #add-2 { margin-top: 60px; }
-    #add-3 { margin-top: 120px; }
-
     .add-extension {
-        width: 20vw;
-        margin: 0 10px;
-        padding: 50px 0 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 20px;
-        box-shadow: 2px 15px 20px 1px rgb(221, 221, 221);
-    }
-
-    article h1 {
-        font-size: 1.2em;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    article h2 {
-        font-size: 0.8em;
-        color: var(--color-text-medium-gray);
-        margin: 13px 0 40px;
-    }
-
-    figure figcaption {
-        display: none;
-    }
-
-    .dots img {
         width: 25vw;
     }
 
+    article h1 {
+        font-size: 1.3em;
+    }
+
     article.add-extension button {
-        width: 15vw;
-        display: flex;
-        justify-content: center;
-        margin: 20px 0;
-        font-size: 0.8em;
-        text-align: center;
-        padding: 20px 20px;
+        width: 20vw;
+        font-size: 1em;
     }
 
-    article.add-extension button:hover {
-        background-color: var(--color-text-white);
-        box-shadow: none;
-        border: thin solid var(--color-secondary);
-        color: var(--color-secondary);
-    }
-
-    #faqs {
-        display: flex;
-        align-items: center;
-    }
+    /*---------------> faqs <-------------- */
 
     #hgroup4 {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
         width: 50vw;
         margin: 30px 0; 
     }
@@ -1446,205 +1066,28 @@ header {
         width: 30vw;
     }
 
-    summary {
-        list-style: none;
-        display: flex; 
-        justify-content: space-between; 
-        align-items: center;
-    }
-
-    summary::marker,
-    summary::-webkit-details-marker {
-        content: "";
-        display: none;
-    }
-
-    summary::after {
-        content: "";
-        margin-left: 10px; 
-        transition: transform 0.25s ease; 
-        font-weight: bold;
-        background: url(../assets/images/icon-arrow.svg) no-repeat center center;
-        background-size: contain;
-        width: 20px; 
-        height: 20px; 
-        display: inline-block;  
-        margin-left: 10px;
-    }
-
-    details[open] summary::after {
-        transform: rotate(180deg);
-        filter: hue-rotate(100deg);
-    }
-
     details summary {
-        list-style-type: disc;
-        font-weight: bold;
-        color: var(--color-text-gray);
-        width: 40vw;
-        padding: 20px 0;
-        border-bottom: thin solid var(--color-text-light-gray);
-    }
+        width: 50vw;
+    } 
 
-    details summary.questions {
-        text-align: left;
-    }
-
-    details[open] summary.questions {
-        list-style-type: square;
-        border-bottom: 2px;
-        margin: 0 auto;
-        color: var(--color-accent);
-    }  
-
-    details p {
-        text-align: left;
-        font-size: 1em;
-        font-weight: bold;
-        color: var(--color-text-medium-gray);
-        line-height: 25px;
-        padding: 10px 0;
-        width: 40vw;
-    }
-
-    #faqs .boton {
-        padding: 15px 30px;
-        margin-top: 60px;
-        font-size: 1.4em;
-    }
-
-    #contact-us {
-        background-color: var(--color-secondary);
-        padding: 30px 0;
-        color: var(--color-text-white);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #hgroup5 {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 60vw; 
-        margin: 0; 
-    }
-
-    #contact-us h4 {
-        font-weight: lighter;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        margin-bottom: 20px;
-        border: none;
-        color: var(--color-text-white);
-    }
+    /*---------------> contact us <-------------- */
 
     #contact-us h1 {
-        width: 25vw;
+        width: 35vw;
     }
 
-    #formulario {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 30vw;
-    }
-
-    #form-btn {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 3%;
-        margin-bottom: 5%;
-    }
-
-    #email {
-        padding: 10px;
-        width: 30vw;
-    }
-
-    #formulario .error {
-        color: var(--color-text-white);
-        width: 30vw;
-        font-size: 14px;
-        display: none;
-        text-align: left;
-        padding: 3px;
-        border: 5px solid var(--color-accent);
-        background-color: var(--color-accent);
-        border-radius: 0 0 10px 10px;
-    }
-
-    input:invalid {
-        border: 5px solid var(--color-accent);
-        border-radius: 5px 5px 0 0;
-        background-image: url(../assets/images/icon-error.svg);
-        background-position: center right 10px;
-        background-repeat: no-repeat;
-    }
-
-    #contact-us-btn {
-        background-color: var(--color-accent);
-        color: var(--color-text-white);
-        width: 10vw;
-        height: 40px;
-        box-shadow: none;
-        font-size: 0.7em;
-        padding: 13px 0;
-        margin-left: 3%;
-    }
-
-    #contact-us-btn:hover {
-        background-color: var(--color-text-white);
-        color: var(--color-accent);
-        border: thin solid var(--color-accent);
-    }
-
-    footer {
-        display: flex;
-        flex-direction: row;
-        background-color: var(--bg-footer);
-        padding: 10px 10%;
-        align-items: center;
-    }
+    /*---------------> footer <-------------- */
 
     footer #logo {
         filter: hue-rotate(180deg) invert(100%);   
     }
 
-    #footer-nav {
-        width: 60vw;
-        margin: 0 80px;
-    }
-
-    #footer-nav ul {
-        justify-content: start;
-    }
-
     #footer-nav ul li {
-        color: var(--color-text-white);
-        list-style: none;
-        border: none;
-        letter-spacing: 2px;
         font-size: 0.9em; 
-        width: 10vw;
     }
     
     #footer-nav ul li:hover {
         color: var(--color-accent);
     }
 
-    footer #rrss {
-        margin: 30px 0;
-        display: flex;
-    }
-
-    .icon-rrss:hover {
-        filter: invert(42%) sepia(100%) saturate(1352%) hue-rotate(-50deg) brightness(90%) contrast(119%);
-    }
-
-    figure .icon-rrss {
-        padding: 20px;
-        text-decoration: none;
-    }
 }

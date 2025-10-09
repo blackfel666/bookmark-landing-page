@@ -1,8 +1,9 @@
-@media only screen and (min-width: 320px) {
+@include respond-to(extra-small) {
+
     #contact-us {
-        background-color: var(--color-primary);
+        background-color: $color-primary;
         padding: 60px 0;
-        color: var(--color-text-white);
+        color: $color-text-white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -14,7 +15,7 @@
         letter-spacing: 4px;
         margin-bottom: 20px;
         border: none;
-        color: var(--color-text-white);
+        color: $color-text-white;
     }
 
     #formulario {
@@ -36,19 +37,19 @@
     }
 
     #formulario .error {
-        color: var(--color-text-white);
+        color: $color-text-white;
         width: 80vw;
         font-size: 14px;
         display: none;
         text-align: left;
         padding: 3px;
-        border: 5px solid var(--color-accent);
-        background-color: var(--color-accent);
+        border: 5px solid $color-accent;
+        background-color: $color-accent;
         border-radius: 0 0 10px 10px;
     }
 
     input:invalid {
-        border: 5px solid var(--color-accent);
+        border: 5px solid $color-accent;
         border-radius: 5px 5px 0 0;
         background-image: url(../assets/images/icon-error.svg);
         background-position: center right 10px;
@@ -56,8 +57,8 @@
     }
 
     #contact-us-btn {
-        background-color: var(--color-accent);
-        color: var(--color-text-white);
+        background-color: $color-accent;
+        color: $color-text-white;
         width: 80vw;
         box-shadow: none;
         margin: 30px 10px;
@@ -66,14 +67,15 @@
     }
 
     #contact-us-btn:hover {
-        background-color: var(--color-text-white);
-        color: var(--color-accent);
+        background-color: $color-text-white;
+        color: $color-accent;
     }
+
 }
 
-@media only screen and (min-width: 426px) {
+@include respond-to(small) {
     
-     #contact-us {
+    #contact-us {
         padding: 30px 0;
     }
 
@@ -83,10 +85,6 @@
         text-align: center;
         width: 60vw; 
         margin: 0; 
-    }
-
-    #contact-us h1 {
-        width: 40vw;
     }
 
     #form-btn {
@@ -108,12 +106,13 @@
     }
 
     #contact-us-btn:hover {
-        border: thin solid var(--color-accent);
+        border: thin solid $color-accent;
     }
+
 
 }
 
-@media only screen and (min-width: 769px) {
+@include respond-to(medium) {
     
     #contact-us h1 {
         width: 35vw;

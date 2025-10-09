@@ -27,9 +27,124 @@
     hgroup h4:hover {
         box-shadow: inset 0 -10px 0px -6px $color-accent;
     }
+    .img-container .img-2 {
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    .img-container #forma2 {
+        position: absolute;
+        z-index: 0;
+        background-color: var(--color-secondary);
+        height: 20vh;
+        width: 80vw;
+        left: 0;
+        margin-top: 15%;
+        border-radius: 0 100px 100px 0;
+        z-index: -6;
+    }
+
+    #bookmark {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #bookmark button {
+        display: none;
+    }
+
 }
 
-@media only screen and (min-width: 426px) {
+@include respond-to(small) {
+
+    #features {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #features h1, h3 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        width: 60vw;
+    }
+
+    hgroup {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 40px;
+        width: 80vw;
+    }
+
+    hgroup h4 {
+        font-size: 1em;
+    }
+
+    hgroup h4:hover {
+        box-shadow: inset 0 -10px 0px -6px var $color-accent;
+    }
+
+      #bookmark-one-click {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .img-container { 
+        @include flex-aling (flex-start, none);
+        @include img-container(0, none, 0);
+        border-radius: 0;
+    }
+    
+    .img-container .img-2 {
+        border: none;
+        background-color: transparent;
+        width: 40vw;
+        margin-right: 40px;
+    }
+
+    .img-container #forma2 {
+        position: absolute;
+        background-color: $color-primary;
+        height: 20vh;
+        width: 40vw;
+        left: 0;
+        margin-top: 15%;
+        border-radius: 0 100px 100px 0;
+        z-index: -6;
+    }
+
+    #hgroup2 {
+        width: 40vw;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hgroup2 h1, h3 {
+        display: flex;
+        width: 40vw;
+    }
+
+    #hgroup2 h3 {
+        text-align: left;
+        margin: 20px 0;
+    }
+
+    #bookmark {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@include respond-to(medium) {
 
     #features {
         margin-bottom: 10px;
@@ -46,22 +161,81 @@
     }
 
     hgroup {
+        margin-top: 40px;
+        display: flex;
         flex-direction: row;
         align-items: center;
-        margin-top: 40px;
-        width: 80vw;
+        width: 50vw;
     }
 
     hgroup h4 {
-        font-size: 1em;
+        font-weight: bold;
+        font-size: 14px;
+        color: $color-text-gray;
+        text-align: center;
+        width: 50vw;
+        padding: 20px 0;
+        border-bottom: thin solid $color-text-medium-gray;
     }
 
     hgroup h4:hover {
-        box-shadow: inset 0 -10px 0px -6px var(--color-accent);
+        box-shadow: inset 0 -10px 0px -6px $color-accent;
     }
-}
 
-@media only screen and (min-width: 769px) {
+    #bookmark-one-click {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        margin-top: 60px;
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: flex-start;
+        box-shadow: none;
+    }
+    
+    .img-container .img-2 {
+        border: none;
+        background-color: transparent;
+        width: 40vw;
+        margin-right: 40px;
+        max-width: 40vh;
+    }
+
+    .img-container #forma2 {
+        position: absolute;
+        background-color: $color-primary;
+        height: 15vh;
+        width: 40vw;
+        left: 0;
+        margin-top: 10%;
+        border-radius: 0 100px 100px 0;
+    }
+
+    #hgroup2 {
+        width: 40vw;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hgroup2 h1, h3 {
+        display: flex;
+        width: 40vw;
+    }
+
+    #hgroup2 h3 {
+        text-align: left;
+        margin: 20px 0;
+    }
+
+    #bookmark {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 30vw;
+    }
 
 }
 

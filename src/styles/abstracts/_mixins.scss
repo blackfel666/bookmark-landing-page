@@ -50,8 +50,8 @@
     flex-direction: $flex-direction;
 }
 
-@mixin primary-text($tx-aling, $mg-bottom, $font-size){
-    width: 40vw;
+@mixin primary-text($width:40vw, $tx-aling, $mg-bottom, $font-size){
+    width: $width;
     font-size: $font-size;
     text-align: $tx-aling;
     margin-bottom: $mg-bottom;
@@ -75,10 +75,23 @@
     margin-bottom: $mg-bottom;
 }
 
-@mixin img-container($margin, $box-shadow){
-    margin: $margin;
-    box-shadow: $box-shadow;
-    border-radius: 30px;
+@mixin pharagrap(){
+    font-size: 0.70em ;
+    color: $color-text-light-gray;
+}
+
+@mixin nav-commons($top:0, $botom:0, $bg-color:black, $visibility:hidden, $shadow:0 0 0 100vmax rgba(0, 0, 0, .5)){
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: $top;
+    right: 0;
+    bottom: $botom;
+    padding: 2rem 0 0;
+    background-color: $bg-dark;
+    visibility: $visibility;
+    width: 100vw;
+    box-shadow: $shadow;
 }
 
 @mixin forma($forma-height:180px, $forma-width:80vw, $forma-top:15%){
@@ -93,17 +106,24 @@
     z-index: -6;
 }
 
-@mixin img-commons ($max-width:70vw){
-    max-width: $max-width;
+@mixin img-commons ($width){
+    
     border-color: $color-text-black;
     border-style: solid;
     border-width: 10px;
     border-radius: 30px;
     background-color: $color-text-black;
+    max-width: $width;
+}
+
+@mixin img-container($margin, $box-shadow, $b-radius){
+    margin: $margin;
+    box-shadow: $box-shadow;
+    border-radius: $b-radius;
 }
 
 @mixin hgroup-commons(){
-    width: 40vw;
+    width: 30vw;
     margin-right: 5%;
     margin-top: 0;
     padding: 0;

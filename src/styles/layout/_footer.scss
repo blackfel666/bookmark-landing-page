@@ -1,10 +1,10 @@
-@media only screen and (min-width: 320px) {
+@include respond-to(extra-small) {
 
     footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: var(--bg-footer);
+        background-color: $bg-footer;
         padding: 50px 0;
     }
 
@@ -20,7 +20,7 @@
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
-        color: var(--color-text-white);
+        color: $color-text-white;
         list-style: none;
         border: none;
         font-weight: bold;
@@ -38,7 +38,7 @@
 
 }
 
-@media only screen and (min-width: 426px) {
+@include respond-to(small) {
      footer {
         flex-direction: row;
         justify-content: space-between;
@@ -52,14 +52,14 @@
 
     #footer-nav ul {
         display: flex;
-        justify-content: start;
+        justify-content: center;
     }
 
     #footer-nav ul li {
         padding: 0 5px;
         font-size: 0.7em;
         letter-spacing: 2px;
-        width: 10vw;
+        width: 14vw;
     }
 
     .icon-rrss:hover {
@@ -67,7 +67,8 @@
     }
 }
 
-@media only screen and (min-width: 769px) {
+@include respond-to(medium) {
+
     footer #logo {
         filter: hue-rotate(180deg) invert(100%);   
     }
@@ -77,6 +78,6 @@
     }
     
     #footer-nav ul li:hover {
-        color: var(--color-accent);
+        color: $color-accent;
     }
 }
