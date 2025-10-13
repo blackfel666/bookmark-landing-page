@@ -93,4 +93,4 @@ La estructura del directorio es la siguiente:
 Este proyecto está bajo la Licencia MIT - mira el archivo LICENSE.md (si tienes uno) para detalles.
 
 ### 💡 Próximos Pasos / Mejoras
-Implementar SASS
+Implementar Tailwind
