@@ -50,7 +50,7 @@
     flex-direction: $flex-direction;
 }
 
-@mixin primary-text($width:40vw, $tx-aling, $mg-bottom, $font-size){
+@mixin primary-text($width:100vw, $tx-aling, $mg-bottom, $font-size){
     width: $width;
     font-size: $font-size;
     text-align: $tx-aling;
@@ -94,14 +94,13 @@
     box-shadow: $shadow;
 }
 
-@mixin forma($forma-height:180px, $forma-width:80vw, $forma-top:15%){
+@mixin forma($forma-height:180px, $forma-width:80vw, $margin:20%){
     position: absolute;
     background-color: $color-primary;
     height: $forma-height;
     width: $forma-width;
-    top: $forma-top;
     right: 0;
-    margin-top: 15%;
+    margin-top: $margin;
     border-radius: 100px 0 0 100px;
     z-index: -6;
 }
@@ -123,7 +122,7 @@
 }
 
 @mixin hgroup-commons(){
-    width: 30vw;
+    width: 60vw;
     margin-right: 5%;
     margin-top: 0;
     padding: 0;

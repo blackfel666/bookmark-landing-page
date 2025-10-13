@@ -28,21 +28,17 @@
         box-shadow: inset 0 -10px 0px -6px $color-accent;
     }
     .img-container .img-2 {
+        @include img-commons (80vw);
         border: none;
-        border-radius: 0;
+        border-radius:0;
         background-color: transparent;
     }
 
     .img-container #forma2 {
-        position: absolute;
-        z-index: 0;
-        background-color: var(--color-secondary);
-        height: 20vh;
-        width: 80vw;
-        left: 0;
-        margin-top: 15%;
-        border-radius: 0 100px 100px 0;
-        z-index: -6;
+       @include forma($forma-height:180px, $forma-width:80vw);
+       border-radius: 0 100px 100px 0;
+       right: none;
+       left: 0;
     }
 
     #bookmark {
@@ -63,7 +59,6 @@
         margin-bottom: 10px;
         display: flex;
         flex-direction: column;
-        text-align: center;
     }
 
     #features h1, h3 {
@@ -71,6 +66,7 @@
         justify-content: center;
         margin-bottom: 20px;
         width: 60vw;
+        text-align: center;
     }
 
     hgroup {
@@ -110,14 +106,11 @@
     }
 
     .img-container #forma2 {
-        position: absolute;
-        background-color: $color-primary;
-        height: 20vh;
-        width: 40vw;
-        left: 0;
-        margin-top: 15%;
+        @include forma( 180px, 40vw );
+        margin-top: 10%;
         border-radius: 0 100px 100px 0;
-        z-index: -6;
+        right: none;
+        left: 0;
     }
 
     #hgroup2 {
@@ -141,6 +134,13 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    #bookmark button {
+        display: block;
+    }
+    #bookmark button:hover{
+        @include button-hover (white, blue, thin solid blue);
     }
 }
 
@@ -190,27 +190,23 @@
     }
 
     .img-container {
-        display: flex;
-        justify-content: flex-start;
-        box-shadow: none;
+        @include img-container(none, none, none);
+        @include flex-aling (flex-start, none);
     }
     
     .img-container .img-2 {
+        @include img-commons (50vw);
         border: none;
+        border-radius: 0;
         background-color: transparent;
-        width: 40vw;
-        margin-right: 40px;
-        max-width: 40vh;
     }
 
-    .img-container #forma2 {
-        position: absolute;
-        background-color: $color-primary;
-        height: 15vh;
-        width: 40vw;
-        left: 0;
+     .img-container #forma2 {
+        @include forma( 30vh, 40vw );
         margin-top: 10%;
         border-radius: 0 100px 100px 0;
+        right: none;
+        left: 0;
     }
 
     #hgroup2 {

@@ -1,5 +1,3 @@
 button {@include button-base( $text-color: white, $shadow-color: lightblue)}
 
-button:hover {@include button-hover(
-    $bg-color:blue
-    )}
+button:hover {@include button-hover ( $bg-color:blue )}

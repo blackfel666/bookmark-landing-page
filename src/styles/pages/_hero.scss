@@ -23,10 +23,8 @@
     .img-container #img-1 {@include img-commons (80vw)}
 
     .img-container #forma {
-        @include forma($forma-height:180px, $forma-width:80vw, $forma-top:19%)}
-
-    #simple1{
-        width: 100vw;
+        @include forma($forma-height:25vh, $forma-width:80vw);
+        margin-top: none;
     }
 
     #hgroup1{
@@ -51,69 +49,44 @@
     #simple-bookmark-manager{
         @include flex-aling (none, row-reverse);
         padding: 0 10%;
+    }
 
-        .img-container {
-            max-width: 30vw;
-        }
-
-        #simple1 { @include flex-aling (flex-start, column);}
-            
-
-        h1,h3{text-align: left}
+    #simple1 { @include flex-aling (flex-start, column);}
         
-        #hgroup1 {@include hgroup-commons()}
+    #hgroup1 { @include hgroup-commons()}
 
-                .boton {
-                    justify-content: flex-start;
-                    margin: 0;
-                    
-                    button {@include button-base($text-color: white, $shadow-color: lightblue);}
-                    button:hover {@include button-hover(white, blue, thin solid blue);}
-                }
-
-
-        .img-container {
-            @include flex-aling (flex-start);
-            @include img-container(
-                $margin:10px 10px 90px 0, 
-                $box-shadow:1px 20px 30px 1px rgba(4, 4, 4, 0.267),
-                $b-radius:20px
-                );
-        }
-        #img-1 {@include img-commons (100vw)}
-        #forma {@include forma(
-                    $forma-height:30vh, 
-                    $forma-width:40vw, 
-                    $forma-top:15%)
-                }
-
+    #simple1 .boton {
+        justify-content: flex-start;
+        margin: 0;
+            
+        button {@include button-base( white, lightblue);
+            margin: 10px 20px 0 0;}
+        button:hover {@include button-hover(white, blue, thin solid blue);}
     }
 
-
-    #simple-bookmark-manager button {
-        margin: 10px 20px 0 0;
-    }
-
-    #simple-bookmark-manager button:hover {
-        background-color: var(--color-text-white);
-        border: thin solid var(--color-primary);
-        color: var(--color-primary);
-    }
-}
-
-@include respond-to(medium) {
-    
-    .img-container {
-        margin: 10px 10px 90px 0;
-        box-shadow: 1px 20px 30px 1px rgba(4, 4, 4, 0.267);
-    }
-
-    .img-container #forma {
-        width: 40vw;
-        top: 10%;
+    #simple1 h1, h3{
+        text-align: left;
     }
 
     #hgroup1 h3 {
-        width: 50vw;
+        width: 40vw;
+        text-align: left;
     }
+
+
+    .img-container {
+        @include flex-aling (flex-start);
+        @include img-container(
+            $margin:10px 10px 90px 0, 
+            $box-shadow:1px 20px 30px 1px rgba(4, 4, 4, 0.267),
+            $b-radius:20px
+            );
+    }
+        
+    .img-container #forma {@include forma( 30vh, 40vw, 5%);}
+}
+
+@include respond-to(medium) {
+
+    .img-container #forma {@include forma( 30vh, 40vw, 5%);}
 }
