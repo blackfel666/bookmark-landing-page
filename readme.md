@@ -28,7 +28,7 @@ Clona el repositorio (si está en Git) o descarga el código fuente:
 
 **Bash**
 
-git clone [TU-URL-DEL-REPOSITORIO]
+git clone 
 Navega al directorio del proyecto:
 
 **Bash**
@@ -67,8 +67,4 @@ Este proyecto está bajo la Licencia MIT - mira el archivo LICENSE.md (si tienes
 
 ### 💡 Próximos Pasos / Mejoras
 Implementar SASS
-
-Optimizar la carga de fuentes (si se usa una fuente web).
-
-Añadir pruebas de rendimiento (Lighthouse).
 
