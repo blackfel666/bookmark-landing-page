@@ -1,1 +1,41 @@
-node_modules
+/node_modules
+/npm-debug.log*
+/yarn-error.log*
+/package-lock.json
+/yarn.lock
+
+# ------------------------------------
+# 2. CACHÉS DEL SISTEMA OPERATIVO
+# ------------------------------------
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# ------------------------------------
+# 3. ARCHIVOS DE COMPILACIÓN Y TEMPORALES
+# ------------------------------------
+# Logs
+*.log
+log.txt
+
+# Directorios temporales
+tmp/
+temp/
+
+# ------------------------------------
+# 4. CONFIGURACIONES LOCALES DE IDE/EDITOR
+# ------------------------------------
+# VS Code
+.vscode/
+
+# WebStorm / JetBrains IDEs
+.idea/
+
+# ------------------------------------
+# 5. ARCHIVOS GENERADOS POR SASS/POSTCSS
+# ------------------------------------
+# Mapas de código fuente (Source Maps)
+*.css.map
