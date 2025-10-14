@@ -11,8 +11,9 @@
 
 </head>
 <body>
-    <header>
-            <figure class="logo-container">
+    <header class="flex flex-row">
+            
+        <figure class="logo-container">
                 <img class="logo" src="../src/assets/images/logo-bookmark.svg" alt="bookmark">
             </figure>
             <button class="open-menu" id="open1">
@@ -42,28 +43,36 @@
     </header>
     <main>
 
-        <section id="simple-bookmark-manager">
+        <section id="simple-bookmark-manager flex flex-col justify-center">
 
-            <figure class="img-container">  
-                <img id="img-1" src="../src/assets/images/illustration-features-tab-1.svg">
-                <div id="forma"></div>
+            <figure class="img-container flex justify-center">
+
+                <img class="relative z-1 w-xs my-8 border-10 rounded-xl bg-black" 
+                src="../src/assets/images/illustration-features-tab-1.svg">
+
+                <div class="absolute -z-6 right-0 rounded-l-full mt-20 bg-primary w-80 h-50"></div>
+
             </figure>
-            <div id="simple1">
+
+            <div id="simple1" class="flex flex-col justify-center">
                     <hgroup id="hgroup1">
-                        <h1>A Simple Bookmark Manager</h1>
-                        <h3>
+                        <h1 class="primary-text">
+                            A Simple Bookmark Manager
+                        </h1>
+                        <h3 class="tertiary-text">
                             A clean and simple interface to organize 
                             your favorite websites.Open a new 
                             browser tab and see your sites load 
                             instantly. Try it for free.
                         </h3>
                     </hgroup>
-                <div class="boton">
-                    <button class="bg-blue-600 ">Get it on Chrome</button>
-                    <button>Get it on Firefox</button>
+                <div class="boton flex justify-center">
+                    <button class="basic-button">Get it on Chrome</button>
+                    <button class="basic-button">Get it on Firefox</button>
                 </div>
             </div>
-            </section>
+
+        </section>
 
         <section id="features">
             <h1>Features</h1>

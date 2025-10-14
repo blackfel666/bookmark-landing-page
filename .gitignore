@@ -3,11 +3,6 @@
 /yarn-error.log*
 /package-lock.json
 /yarn.lock
-
-# ------------------------------------
-# 2. CACHÉS DEL SISTEMA OPERATIVO
-# ------------------------------------
-# macOS
 .DS_Store
 
 # Windows
