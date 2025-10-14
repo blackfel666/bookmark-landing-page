@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 # 🔖 Bookmark Landing Page
-Este proyecto es una implementación de una landing page moderna para un servicio de gestión de marcadores. Está desarrollado con un enfoque en la accesibilidad y la funcionalidad CSS-Only, eliminando la dependencia de JavaScript para las características clave de interacción.
+Este proyecto es una implementación de una landing page moderna para un servicio de gestión de marcadores. Está desarrollado con un enfoque en la accesibilidad.
 
 ## ✨ Características Principales
 Diseño Responsivo: Implementación completa de Media Queries para asegurar una visualización óptima en dispositivos móviles, tabletas y escritorio.
@@ -29,7 +28,7 @@ Clona el repositorio (si está en Git) o descarga el código fuente:
 
 **Bash**
 
-git clone [TU-URL-DEL-REPOSITORIO]
+git clone (https://github.com/blackfel666/bookmark-landing-page.git)
 Navega al directorio del proyecto:
 
 **Bash**
@@ -49,29 +48,21 @@ open index.html
 La estructura del directorio es la siguiente:
 
 ```bookmark-landing-page/
-├── index.html          # Estructura principal de la página
+├── public/
+│   └── index.html          ← Ubicación real diferente
 ├── src/
-│   ├── assets/         # Contiene todas las imágenes
+│   ├── assets/
+│   │   ├── fonts/          ← No documentado
 │   │   └── images/
-│   ├── js/
-│   │   └── main.js     # Lógica JS para la navegación
+│   ├── js/main.js
 │   └── styles/
-│       └── style.css   # Todos los estilos y media queries
-└── README.md
+│       ├── style.css
+│       └── style-old.css 
 ```
 
 ### ✍️ Autor
 [Blackfel666 / Yohann Velasquez] - Desarrollo Front-End
 
-### 📄 Licencia
-Este proyecto está bajo la Licencia MIT - mira el archivo LICENSE.md (si tienes uno) para detalles.
-
 ### 💡 Próximos Pasos / Mejoras
 Implementar SASS
-
-Optimizar la carga de fuentes (si se usa una fuente web).
-
-Añadir pruebas de rendimiento (Lighthouse).
-=======
->>>>>>> 04fabf9835026ab92e66c8c4aa79817bd7951993
 
