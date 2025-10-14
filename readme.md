@@ -1,5 +1,5 @@
 # 🔖 Bookmark Landing Page
-Este proyecto es una implementación de una landing page moderna para un servicio de gestión de marcadores. Está desarrollado con un enfoque en la accesibilidad y la funcionalidad CSS-Only, eliminando la dependencia de JavaScript para las características clave de interacción.
+Este proyecto es una implementación de una landing page moderna para un servicio de gestión de marcadores. Está desarrollado con un enfoque en la accesibilidad y la funcionalidad.
 
 ## ✨ Características Principales
 Diseño Responsivo: Implementación completa de Media Queries para asegurar una visualización óptima en dispositivos móviles, tabletas y escritorio.
@@ -9,7 +9,7 @@ Navegación Móvil: Menú de navegación tipo "hamburguesa" con funcionalidad de
 Estilos Modulares: Uso de clases e IDs claros para una fácil depuración y mantenimiento.
 
 ### 🛠️ Tecnologías Utilizadas
-Este proyecto fue construido utilizando únicamente tecnologías fundamentales de la web.
+Este proyecto fue construido utilizando únicamente tecnologías fundamentales.
 
 HTML5: Estructura semántica del contenido, incluyendo elementos modernos como `<hgroup>`, `<figure>`, y atributos ARIA.
 
@@ -29,7 +29,7 @@ Clona el repositorio (si está en Git) o descarga el código fuente:
 **Bash**
 
 git clone 
-Navega al directorio del proyecto:
+Navega al directorio del proyecto: https://github.com/blackfel666/bookmark-landing-page.git
 
 **Bash**
 
@@ -48,22 +48,20 @@ open index.html
 La estructura del directorio es la siguiente:
 
 ```bookmark-landing-page/
-├── index.html          # Estructura principal de la página
+├── public/
+│   └── index.html          
 ├── src/
-│   ├── assets/         # Contiene todas las imágenes
+│   ├── assets/
+│   │   ├── fonts/          
 │   │   └── images/
-│   ├── js/
-│   │   └── main.js     # Lógica JS para la navegación
+│   ├── js/main.js
 │   └── styles/
-│       └── style.css   # Todos los estilos y media queries
-└── README.md
+│       ├── style.css
+│       └── style-old.css 
 ```
 
 ### ✍️ Autor
 [Blackfel666 / Yohann Velasquez] - Desarrollo Front-End
-
-### 📄 Licencia
-Este proyecto está bajo la Licencia MIT - mira el archivo LICENSE.md (si tienes uno) para detalles.
 
 ### 💡 Próximos Pasos / Mejoras
 Implementar SASS
