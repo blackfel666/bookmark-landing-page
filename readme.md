@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🔖 Bookmark Landing Page
 Este proyecto es una implementación de una landing page moderna para un servicio de gestión de marcadores. Está desarrollado con un enfoque en la accesibilidad y la funcionalidad CSS-Only, eliminando la dependencia de JavaScript para las características clave de interacción.
 
@@ -71,4 +72,6 @@ Implementar SASS
 Optimizar la carga de fuentes (si se usa una fuente web).
 
 Añadir pruebas de rendimiento (Lighthouse).
+=======
+>>>>>>> 04fabf9835026ab92e66c8c4aa79817bd7951993
 
