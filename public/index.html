@@ -63,7 +63,11 @@
             <div id="simple1" class=" w-full flex place-items-center flex-col
                                     sm:w-full sm:order-1 sm:align-center sm:justify-end-safe">
                     
-                <hgroup id="hgroup1" class="xs:w-2/3 sm:w-2/3" >
+                <hgroup class="
+                xs:w-2/3 xs:text-center
+                sm:w-2/3 sm:text-left
+                md:text-left"
+                >
 
                         <h1 class="primary-text">
                             A Simple Bookmark Manager
@@ -78,74 +82,109 @@
 
                     </hgroup>
 
-                <div class="boton w-3/6 flex justify-center mt-4 gap-4
-                            sm:justify-start sm:w-2/3
+                <div class="boton w-3/6 flex flex-col justify-center mt-4 gap-4
+                            sm:flex-row sm:justify-start sm:w-2/3
                             md:justify-start">
+
                     <button class="basic-button">Get it on Chrome</button>
                     <button class="basic-button">Get it on Firefox</button>
                 </div>
+
             </div>
 
         </section>
 
-        <section id="features" 
+        <section id="features"
         
-            class="flex flex-col items-center justify-items-center-center w-full mx-auto
-                    sm:flex-row
-                    md:flex-row md:items-center md:justify-around md:space-x-12">
+            class="flex flex-col items-center justify-items-center h-full w-full mx-auto my-7">
+
+            <hgroup id="hgroup1" class="
+                    xs:w-2/3 
+                    sm:w-1/2 sm:items-center sm:text-center
+                ">
+                <h1 class="primary-text">Features</h1>
+                
+                <h3 class="tertiary-text">
+                    Our aim to make it quick and easy for you
+                    to acces your favorite websites. your
+                    bookmarks sync between your devices so
+                    you can acces them on the go.
+                </h3>
+            </hgroup>
             
-            <h1 class="primary-text">Features</h1>
-            
-            <h3 class="tertiary-text">
-                Our aim to make it quick and easy for you
-                to acces your favorite websites. your
-                bookmarks sync between your devices so
-                you can acces them on the go.
-            </h3>
-            
-            <hgroup>
-                <h4 data-img="0">Simple Bookmarking</h4>
-                <h4 data-img="1">Speedy Searching</h4>
-                <h4 data-img="2">Easy Sharing</h4>
+            <hgroup class=" w-2/3 my-8
+                xs:text-center
+                sm:text-center sm:w-1/2
+                md:text-center
+            ">
+                <h4 data-img="0" class="secundary-text">Simple Bookmarking</h4>
+                <h4 data-img="1" class="secundary-text">Speedy Searching</h4>
+                <h4 data-img="2" class="secundary-text">Easy Sharing</h4>
             </hgroup>
             </section>
 
-            <section id="bookmark-one-click">
+        <section id="bookmark-one-click" 
+            
+                class=" img-container items-center justify-center w-full flex flex-col
+                    sm:flex-row
+                ">
 
-            <figure class="img-container w-full md:w-1/2 relative flex justify-center">
+            <figure class="img-container relative w-full h-full flex justify-center">
 
-                <img class="img-2 feature-img w-full max-w-full h-auto absolute active" data-tab="0" src="../src/assets/images/illustration-features-tab-1.svg">
-                <img class="img-2 feature-img w-full max-w-full h-auto absolute hidden" data-tab="1" src="../src/assets/images/illustration-features-tab-2.svg">
-                <img class="img-2 feature-img w-full max-w-full h-auto absolute hidden" data-tab="2" src="../src/assets/images/illustration-features-tab-3.svg">
+                <img class="img-2 feature-img w-2/3 h-auto active" data-tab="0" src="../src/assets/images/illustration-features-tab-1.svg">
+                <img class="img-2 feature-img w-2/3 h-auto hidden" data-tab="1" src="../src/assets/images/illustration-features-tab-2.svg">
+                <img class="img-2 feature-img w-2/3 h-auto hidden" data-tab="2" src="../src/assets/images/illustration-features-tab-3.svg">
         
-                <div id="forma2" class="absolute -z-6 right-0 rounded-l-full mt-20 bg-primary w-80 h-50"></div>
+                <div id="forma2" class="absolute -z-6 left-0 rounded-r-full mt-20 bg-primary w-80 h-50"></div>
             </figure>
 
-            <div id="bookmark" class="">
-                <hgroup id="hgroup2">
-                    <h1>Bookmark in one click</h1>
-                    <h3>
+            <div id="bookmark" class="flex flex-col items-center
+                sm:flex-col
+            ">
+                
+                <hgroup id="hgroup2" class=" w-2/3 my-10
+                    xs:text-center
+                    sm:text-left sm:w-2/3
+                    md:text-left
+                ">
+
+                    <h1 class="primary-text">Bookmark in one click</h1>
+
+                    <h3 class="tertiary-text">
                         Organize your bookmarks however you like. 
                         Our simple drag-and-drop interface gives 
                         you complete control over how you manage 
                         your favourite sites.
                     </h3>
+                
                 </hgroup>
-                <button class="boton">More Info</button>
+                
+                <button class="basic-button justify-start xs:invisible sm:visible md:visible">More Info</button>
             </div>
             
         </section>
 
-        <section id="download-the-extension">
-        <hgroup id="hgroup3">
-            <h1>Download the extension</h1>
-            <h3>
+        <section id="download-the-extension"
+            class="items-center justify-center w-full flex flex-col
+                    sm:flex-row">
+
+        <hgroup id="hgroup3"
+            class="w-2/3 my-8
+                xs:text-center
+                sm:text-center sm:w-1/2
+                md:text-center">
+
+            <h1 class="primary-text">Download the extension</h1>
+
+            <h3 class="tertiary-text">
                 We’ve got more browsers in the pipeline.
                 Please let us know if you’ve got a 
                 favourite you’d like us to prioritize.
             </h3>
+
         </hgroup>
-        <article class="add-extension" id="add-1">
+
+        <article class="add-extension rounded-2xl justify-items-center w-1/2 my-5 py-10 shadow-xl/20" id="add-1">
             <figure class="browser">
                 <img src="../src/assets/images/logo-chrome.svg" alt="Chrome-logo">
                 <figcaption>Chrome-logo</figcaption>
@@ -155,9 +194,9 @@
             <figure class="dots">
                 <img src="../src/assets/images/bg-dots.svg" alt="dots">
             </figure>
-            <button class="boton">Add & Install Extension</button>
+            <button class="basic-button">Add & Install Extension</button>
         </article>
-        <article class="add-extension" id="add-2">
+        <article class="add-extension rounded-2xl justify-items-center w-1/2 my-5 py-10 shadow-xl/20" id="add-2">
             <figure class="browser">
                 <img src="../src/assets/images/logo-firefox.svg" alt="Firefox-logo">
                 <figcaption>Firefox-logo</figcaption>
@@ -167,9 +206,9 @@
             <figure class="dots">
                 <img src="../src/assets/images/bg-dots.svg" alt="dots">
             </figure>
-            <button class="boton">Add & Install Extension</button>
+            <button class="basic-button">Add & Install Extension</button>
         </article>
-        <article class="add-extension" id="add-3">
+        <article class="add-extension rounded-2xl justify-items-center w-1/2 my-5 py-10 shadow-xl/20" id="add-3">
             <figure class="browser">
                 <img src="../src/assets/images/logo-opera.svg" alt="Opera-logo">
                 <figcaption>Opera-logo</figcaption>
@@ -179,7 +218,7 @@
             <figure class="dots">
                 <img src="../src/assets/images/bg-dots.svg" alt="dots">
             </figure>
-            <button class="boton">Add & Install Extension</button>
+            <button class="basic-button">Add & Install Extension</button>
         </article>
         </section>
 

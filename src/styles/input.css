@@ -48,19 +48,21 @@
 
 .primary-text {
     @apply 
-    w-full text-2xl font-bold text-center
-    sm:text-left 
+    w-full text-2xl font-bold
     md:text-3xl
 }
 
 .secundary-text {
-    
-}
+    @apply w-full text-base font-bold text-text-gray mt-3
+    border-b
+    hover:border-b-4
+    hover:border-accent
+;}
 
 .tertiary-text {
     @apply 
-    w-full text-sm text-center text-text-gray mt-6
-    sm:text-left;
-}
+    w-full text-sm text-text-gray mt-6
+
+;}
 
 .pharagrap {}
