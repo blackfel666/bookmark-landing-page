@@ -43,30 +43,44 @@
     </header>
     <main>
 
-        <section id="simple-bookmark-manager flex flex-col justify-center">
+        <section id="simple-bookmark-manager "
 
-            <figure class="img-container flex justify-center">
+            class= "flex flex-col items-center justify-items-center-center w-full mx-auto
+                sm:flex-row
+                md:flex-row md:items-center md:justify-around md:space-x-12">
 
-                <img class="relative z-1 w-xs my-8 border-10 rounded-xl bg-black" 
+            <figure class="img-container
+                    justify-center w-full flex  relative 
+                    sm:order-2">
+
+                <img class="relative z-10 m-2 w-2/3 max-w-full h-auto my-8 border-8 rounded-xl bg-black" 
                 src="../src/assets/images/illustration-features-tab-1.svg">
 
-                <div class="absolute -z-6 right-0 rounded-l-full mt-20 bg-primary w-80 h-50"></div>
+                <div class="absolute -z-6 right-0 rounded-l-full mt-20 h-2/3 max-w-full w-2/3 bg-primary"></div>
 
             </figure>
 
-            <div id="simple1" class="flex flex-col justify-center mt-6">
-                    <hgroup id="hgroup1" class="justify-items-center" >
+            <div id="simple1" class=" w-full flex place-items-center flex-col
+                                    sm:w-full sm:order-1 sm:align-center sm:justify-end-safe">
+                    
+                <hgroup id="hgroup1" class="xs:w-2/3 sm:w-2/3" >
+
                         <h1 class="primary-text">
                             A Simple Bookmark Manager
                         </h1>
+
                         <h3 class="tertiary-text">
                             A clean and simple interface to organize 
                             your favorite websites.Open a new 
                             browser tab and see your sites load 
                             instantly. Try it for free.
                         </h3>
+
                     </hgroup>
-                <div class="boton flex justify-center">
+
+                <div class="boton w-3/6 flex justify-center mt-4 gap-4
+                            sm:justify-start sm:w-2/3
+                            md:justify-start">
                     <button class="basic-button">Get it on Chrome</button>
                     <button class="basic-button">Get it on Firefox</button>
                 </div>
@@ -74,14 +88,21 @@
 
         </section>
 
-        <section id="features" class="flex flex-col justify-items-center mt-6">
+        <section id="features" 
+        
+            class="flex flex-col items-center justify-items-center-center w-full mx-auto
+                    sm:flex-row
+                    md:flex-row md:items-center md:justify-around md:space-x-12">
+            
             <h1 class="primary-text">Features</h1>
+            
             <h3 class="tertiary-text">
                 Our aim to make it quick and easy for you
                 to acces your favorite websites. your
                 bookmarks sync between your devices so
                 you can acces them on the go.
             </h3>
+            
             <hgroup>
                 <h4 data-img="0">Simple Bookmarking</h4>
                 <h4 data-img="1">Speedy Searching</h4>
@@ -90,13 +111,17 @@
             </section>
 
             <section id="bookmark-one-click">
-            <figure class="img-container">
-                <img class="img-2 feature-img" data-tab="0" src="../src/assets/images/illustration-features-tab-1.svg">
-                <img class="img-2 feature-img" data-tab="1" src="../src/assets/images/illustration-features-tab-2.svg">
-                <img class="img-2 feature-img" data-tab="2" src="../src/assets/images/illustration-features-tab-3.svg">
-                <div id="forma2"></div>
+
+            <figure class="img-container w-full md:w-1/2 relative flex justify-center">
+
+                <img class="img-2 feature-img w-full max-w-full h-auto absolute active" data-tab="0" src="../src/assets/images/illustration-features-tab-1.svg">
+                <img class="img-2 feature-img w-full max-w-full h-auto absolute hidden" data-tab="1" src="../src/assets/images/illustration-features-tab-2.svg">
+                <img class="img-2 feature-img w-full max-w-full h-auto absolute hidden" data-tab="2" src="../src/assets/images/illustration-features-tab-3.svg">
+        
+                <div id="forma2" class="absolute -z-6 right-0 rounded-l-full mt-20 bg-primary w-80 h-50"></div>
             </figure>
-            <div id="bookmark">
+
+            <div id="bookmark" class="">
                 <hgroup id="hgroup2">
                     <h1>Bookmark in one click</h1>
                     <h3>

@@ -22,23 +22,35 @@
     
     /* Tipografía */
     --font-primary: "puppy", sans-serif;
+
+    /*Breakpoint*/
+    --breakpoint-xs: 320px;
+    --breakpoint-sm: 620px;
+    --breakpoint-md: 769px;
+
+
 }
 
 .basic-button {
-    @apply bg-primary rounded-md 
+    @apply
+    bg-primary rounded-md 
     text-white
     font-bold
     text-sm
     p-2.5
-    mr-4
-    mt-6
     shadow-xl
     hover:bg-white
-     hover:text-gray-500 ;
+    hover:text-gray-500 
+
+    sm:hover:text-primary
+    sm:hover:border-1;
 }
 
 .primary-text {
-    @apply w-2xs text-2xl font-bold text-center;
+    @apply 
+    w-full text-2xl font-bold text-center
+    sm:text-left 
+    md:text-3xl
 }
 
 .secundary-text {
@@ -46,7 +58,9 @@
 }
 
 .tertiary-text {
-    @apply w-3xs text-sm text-center text-text-gray mt-6;
+    @apply 
+    w-full text-sm text-center text-text-gray mt-6
+    sm:text-left;
 }
 
 .pharagrap {}
