@@ -82,7 +82,7 @@
 
                     </hgroup>
 
-                <div class="boton w-3/6 flex flex-col justify-center mt-4 gap-4
+                <div class="boton flex flex-raw justify-center mt-4 gap-4
                             sm:flex-row sm:justify-start sm:w-2/3
                             md:justify-start">
 
@@ -99,8 +99,8 @@
             class="flex flex-col items-center justify-items-center h-full w-full mx-auto my-7">
 
             <hgroup id="hgroup1" class="
-                    xs:w-2/3 
-                    sm:w-1/2 sm:items-center sm:text-center
+                    xs:w-2/3 xs:items-center xs:text-center
+                    sm:w-1/2 
                 ">
                 <h1 class="primary-text">Features</h1>
                 
@@ -166,12 +166,12 @@
 
         <section id="download-the-extension"
             class="items-center justify-center w-full flex flex-col
-                    sm:flex-row">
+                    ">
 
         <hgroup id="hgroup3"
-            class="w-2/3 my-8
+            class="w-2/3 my-8 flex-col
                 xs:text-center
-                sm:text-center sm:w-1/2
+                sm:text-center sm:w-full
                 md:text-center">
 
             <h1 class="primary-text">Download the extension</h1>
@@ -184,101 +184,126 @@
 
         </hgroup>
 
-        <article class="add-extension rounded-2xl justify-items-center w-1/2 my-5 py-10 shadow-xl/20" id="add-1">
+        <article class="add-extension article-commons items-center justify-center " id="add-1">
             <figure class="browser">
                 <img src="../src/assets/images/logo-chrome.svg" alt="Chrome-logo">
-                <figcaption>Chrome-logo</figcaption>
             </figure>
-            <h1>Add to Chrome</h1>
-            <h2>Minimum version 62</h2>
-            <figure class="dots">
+            <h1 class="text-lg font-bold mt-8">Add to Chrome</h1>
+            <h2 class="tertiary-text text-center ">Minimum version 62</h2>
+            <figure class="dots my-6">
                 <img src="../src/assets/images/bg-dots.svg" alt="dots">
             </figure>
             <button class="basic-button">Add & Install Extension</button>
         </article>
-        <article class="add-extension rounded-2xl justify-items-center w-1/2 my-5 py-10 shadow-xl/20" id="add-2">
+
+        <article class="add-extension article-commons items-center justify-center" id="add-2">
             <figure class="browser">
                 <img src="../src/assets/images/logo-firefox.svg" alt="Firefox-logo">
-                <figcaption>Firefox-logo</figcaption>
+
             </figure>
-            <h1>Add to Firefox</h1>
-            <h2>Minimum version 55</h2>
-            <figure class="dots">
+            <h1 class="text-lg font-bold mt-8">Add to Firefox</h1>
+            <h2 class="tertiary-text text-center ">Minimum version 55</h2>
+            <figure class="dots my-6 ">
                 <img src="../src/assets/images/bg-dots.svg" alt="dots">
             </figure>
             <button class="basic-button">Add & Install Extension</button>
         </article>
-        <article class="add-extension rounded-2xl justify-items-center w-1/2 my-5 py-10 shadow-xl/20" id="add-3">
+
+        <article class="add-extension article-commons items-center justify-center" id="add-3">
             <figure class="browser">
                 <img src="../src/assets/images/logo-opera.svg" alt="Opera-logo">
-                <figcaption>Opera-logo</figcaption>
             </figure>
-            <h1>Add to Opera</h1>
-            <h2>Minimum version 46</h2>
-            <figure class="dots">
+            <h1 class="text-lg font-bold mt-8">Add to Opera</h1>
+            <h2 class="tertiary-text text-center ">Minimum version 46</h2>
+            <figure class="dots my-6">
                 <img src="../src/assets/images/bg-dots.svg" alt="dots">
             </figure>
             <button class="basic-button">Add & Install Extension</button>
         </article>
         </section>
 
-        <section id="faqs">
-            <hgroup id="hgroup4">
-                <h1>Frequently Asked Questions</h1>
-                <h3>
+        <section id="faqs" class="items-center justify-center w-full flex flex-col">
+            
+            <hgroup id="hgroup4" class="w-2/3 my-8 flex-col
+                xs:text-center
+                sm:text-center sm:w-full
+                md:text-center">
+                <h1 class="primary-text">Frequently Asked Questions</h1>
+                <h3 class="tertiary-text">
                     Here are some of our FAQs. If you have any
                     other questions you’d like answered please
                     feel free to email us.
                 </h3>
             </hgroup>
         
-        <details>
-            <summary class="questions">What is Bookmark?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <details class="w-2/3 border-b border-gray-300
+                sm:w-1/2">
+            <summary class="questions list-none accordion-arrow my-4 text-sm font-bold text-text-gray">What is Bookmark?</summary>
+                <p class="pharagrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Nisi perspiciatis eos dolorum ipsum vel aliquid, 
                     cumque consequuntur quaerat repudiandae amet voluptates 
                     ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
                 </p>
         </details>
-        <details>
-            <summary class="questions">How can I request a new browser?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <details class="w-2/3 border-b border-gray-300
+                sm:w-1/2">
+            <summary class="questions list-none accordion-arrow my-4 text-sm font-bold text-text-gray">How can I request a new browser?</summary>
+                <p class="pharagrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Nisi perspiciatis eos dolorum ipsum vel aliquid, 
                     cumque consequuntur quaerat repudiandae amet voluptates 
                     ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
                 </p>
         </details>
-        <details>  
-            <summary class="questions">Is there a mobile app?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <details class="w-2/3 border-b border-gray-300
+                sm:w-1/2">
+  
+            <summary class="questions list-none accordion-arrow my-4 text-sm font-bold text-text-gray">Is there a mobile app?</summary>
+                <p class="pharagrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Nisi perspiciatis eos dolorum ipsum vel aliquid, 
                     cumque consequuntur quaerat repudiandae amet voluptates 
                     ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
                 </p>
         </details>
-        <details>  
-            <summary class="questions">What about other Chromium browsers?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <details class="w-2/3 border-b border-gray-300
+                sm:w-1/2">
+  
+            <summary class="questions list-none accordion-arrow my-4 text-sm font-bold text-text-gray">What about other Chromium browsers?</summary>
+                <p class="pharagrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Nisi perspiciatis eos dolorum ipsum vel aliquid, 
                     cumque consequuntur quaerat repudiandae amet voluptates 
                     ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
                 </p>
         </details>
-            <button class="boton">More Info</button>
+            <button class="basic-button my-6">More Info</button>
         </section>
 
-        <section id="contact-us">
-        <hgroup id="hgroup5">
-            <h4>35,000+ already joined</h4>
-            <h1>Stay up-to-date with what we’re doing</h1>
+        <section id="contact-us" class="bg-primary items-center justify-center w-full flex flex-col py-10">
+        <hgroup id="hgroup5" class="text-center w-2/3">
+            <h4 class="text-white text-base tracking-widest">35,000+ already joined</h4>
+            <h1 class="text-white font-bold text-xl">Stay up-to-date with what we’re doing</h1>
         </hgroup>
-        <div id="form-btn">
-            <form id="formulario">
-                <input type="email" id="email" name="email" placeholder="Enter your email addres" >
-                <span class="error" id="errorEmail"></span>
-            </form>
-            <button id="contact-us-btn">Contact Us</button>
-        </div>
+        <div id="form-btn" class="flex flex-col items-center">
+    
+    <form id="formulario" class="w-4/5 sm:w-80 md:w-96 relative">
+        <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Enter your email addres" 
+            class="w-full py-3 px-3 rounded-md border-2 border-gray-200 focus:outline-none focus:border-primary-soft-red custom-input-error"
+            required
+        >
+        <span class="error w-full text-left p-1 text-xs text-white bg-accent custom-error-box" id="errorEmail"></span>
+    </form>
+    
+    <button 
+        id="contact-us-btn" 
+        class="w-4/5 sm:w-80 md:w-96 mt-4 mb-8 text-sm font-semibold py-3 rounded-md bg-accent text-white shadow-none 
+               hover:bg-white hover:text-accent hover:border-2 hover:border-accent custom-btn"
+    >
+        Contact Us
+    </button>
+</div>
         </section>
 
     </main>
