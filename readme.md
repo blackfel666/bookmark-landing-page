@@ -57,7 +57,9 @@ La estructura del directorio es la siguiente:
 │   ├── js/main.js
 │   └── styles/
 │       ├── style.css
-│       └── style-old.css 
+│       └── style-old.css
+│
+└── README.md
 ```
 
 ### ✍️ Autor
