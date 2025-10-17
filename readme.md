@@ -1,5 +1,5 @@
 # 🔖 Bookmark Landing Page
-Este proyecto es una implementación de una landing page moderna para un servicio de gestión de marcadores. Está desarrollado con un enfoque en la accesibilidad y la funcionalidad CSS-Only, eliminando la dependencia de JavaScript para las características clave de interacción.
+Este proyecto es una implementación de una landing page moderna para un servicio de gestión de marcadores. Está desarrollado con un enfoque en la accesibilidad y la funcionalidad.
 
 ## ✨ Características Principales
 Diseño Responsivo: Implementación completa de Media Queries para asegurar una visualización óptima en dispositivos móviles, tabletas y escritorio.
