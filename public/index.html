@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <header class="flex justify-between items-center px-6 py-4 relative z-50 bg-white">
+    <header class="flex justify-between items-center px-6 py-4 mb-10 relative z-50 bg-white">
     
     <figure>
         <img class="logo h-6" src="../src/assets/images/logo-bookmark.svg" alt="bookmark">
@@ -22,11 +22,13 @@
     </button>
     
     <nav class="hidden md:flex md:items-center md:space-x-8">
-        <a href="" class="text-sm font-semibold text-gray-700 uppercase hover:text-soft-red">FEATURES</a>
-        <a href="" class="text-sm font-semibold text-gray-700 uppercase hover:text-soft-red">PRICING</a>
-        <a href="" class="text-sm font-semibold text-gray-700 uppercase hover:text-soft-red">CONTACT</a>
+        <a href="" class="text-sm font-semibold text-gray-700 uppercase sm:hover:text-accent">FEATURES</a>
+        <a href="" class="text-sm font-semibold text-gray-700 uppercase sm:hover:text-accent">PRICING</a>
+        <a href="" class="text-sm font-semibold text-gray-700 uppercase sm:hover:text-accent">CONTACT</a>
         <a href="">
-            <button class="px-6 py-2 text-sm font-semibold rounded-md text-white bg-soft-red border-2 border-soft-red hover:bg-white hover:text-soft-red">
+            <button class="px-6 py-2 text-sm font-semibold rounded-md text-white bg-soft-red border-2 border-soft-red hover:bg-white hover:text-soft-red
+            md:bg-accent md:text-white md:hover:bg-white hover:text-accent
+            ">
                 LOGIN
             </button>
         </a>
@@ -69,15 +71,14 @@
 
         <section id="simple-bookmark-manager "
 
-            class= "flex flex-col items-center justify-items-center-center w-full mx-auto
+            class= "flex flex-col items-center justify-items-center w-full mx-auto
                 sm:flex-row
-                md:flex-row md:items-center md:justify-around md:space-x-12">
+                md:flex-row md:items-center md:justify-around">
 
-            <figure class="img-container
-                    justify-center w-full flex  relative 
+            <figure class="img-container justify-center w-full flex relative 
                     sm:order-2">
 
-                <img class="relative z-10 m-2 w-2/3 max-w-full h-auto my-8 border-8 rounded-xl bg-black" 
+                <img class="relative z-10 m-2 w-2/3 max-w-full h-auto my-8 border-8 rounded-xl bg-black shadow-2xl" 
                 src="../src/assets/images/illustration-features-tab-1.svg">
 
                 <div class="absolute -z-6 right-0 rounded-l-full mt-20 h-2/3 max-w-full w-2/3 bg-primary"></div>
@@ -88,7 +89,7 @@
                                     sm:w-full sm:order-1 sm:align-center sm:justify-end-safe">
                     
                 <hgroup class="
-                xs:w-2/3 xs:text-center
+                w-2/3 xs:text-center
                 sm:w-2/3 sm:text-left
                 md:text-left"
                 >
@@ -107,11 +108,10 @@
                     </hgroup>
 
                 <div class="boton flex flex-raw justify-center mt-4 gap-4
-                            sm:flex-row sm:justify-start sm:w-2/3
-                            md:justify-start">
+                            sm:flex-row sm:w-full">
 
-                    <button class="basic-button">Get it on Chrome</button>
-                    <button class="basic-button">Get it on Firefox</button>
+                    <button class="basic-button ">Get it on Chrome</button>
+                    <button class="basic-button ">Get it on Firefox</button>
                 </div>
 
             </div>
@@ -120,12 +120,12 @@
 
         <section id="features"
         
-            class="flex flex-col items-center justify-items-center h-full w-full mx-auto my-7">
+            class="flex flex-col items-center justify-items-center h-full w-full mx-auto mt-10">
 
             <hgroup id="hgroup1" class="
                     xs:w-2/3 xs:items-center xs:text-center
-                    sm:w-1/2 
-                ">
+                    sm:w-1/2 ">
+
                 <h1 class="primary-text">Features</h1>
                 
                 <h3 class="tertiary-text">
@@ -138,12 +138,12 @@
             
             <hgroup class=" w-2/3 my-8
                 xs:text-center
-                sm:text-center sm:w-1/2
+                sm:text-center sm:w-2/3 sm:flex sm:flex-row
                 md:text-center
             ">
-                <h4 data-img="0" class="secundary-text">Simple Bookmarking</h4>
-                <h4 data-img="1" class="secundary-text">Speedy Searching</h4>
-                <h4 data-img="2" class="secundary-text">Easy Sharing</h4>
+                <h4 data-img="0" class="secundary-text pb-4">Simple Bookmarking</h4>
+                <h4 data-img="1" class="secundary-text pb-4">Speedy Searching</h4>
+                <h4 data-img="2" class="secundary-text pb-4">Easy Sharing</h4>
             </hgroup>
             </section>
 
@@ -159,18 +159,17 @@
                 <img class="img-2 feature-img w-2/3 h-auto hidden" data-tab="1" src="../src/assets/images/illustration-features-tab-2.svg">
                 <img class="img-2 feature-img w-2/3 h-auto hidden" data-tab="2" src="../src/assets/images/illustration-features-tab-3.svg">
         
-                <div id="forma2" class="absolute -z-6 left-0 rounded-r-full mt-10 bg-primary w-2/3 h-40"></div>
+                <div id="forma2" class="absolute -z-6 left-0 rounded-r-full mt-15 bg-primary w-2/3 h-40 sm:h-50"></div>
             </figure>
 
             <div id="bookmark" class="flex flex-col items-center
-                sm:flex-col
+                sm:flex-col sm:items-start
             ">
                 
-                <hgroup id="hgroup2" class=" w-2/3 my-20
+                <hgroup id="hgroup2" class=" w-2/3 mt-20 mb-5
                     xs:text-center
-                    sm:text-left sm:w-2/3
-                    md:text-left
-                ">
+                    sm:text-left sm:w-2/3 sm:mt-5
+                    md:text-left">
 
                     <h1 class="primary-text">Bookmark in one click</h1>
 
@@ -183,19 +182,19 @@
                 
                 </hgroup>
                 
-                <button class="basic-button justify-start xs:invisible sm:visible md:visible">More Info</button>
+                <button class="basic-button xs:invisible sm:visible md:visible">More Info</button>
             </div>
             
         </section>
 
         <section id="download-the-extension"
-            class="items-center justify-center w-full flex flex-col
+            class="items-center w-full flex flex-col mt-20
                     ">
 
         <hgroup id="hgroup3"
             class="w-2/3 my-8 flex-col
                 xs:text-center
-                sm:text-center sm:w-full
+                sm:text-center sm:w-2/5
                 md:text-center">
 
             <h1 class="primary-text">Download the extension</h1>
@@ -207,52 +206,53 @@
             </h3>
 
         </hgroup>
+        <div class="flex flex-col sm:flex-row justify-center items-start sm:space-x-8 mt-10">
 
-        <article class="add-extension article-commons items-center justify-center " id="add-1">
-            <figure class="browser">
-                <img src="../src/assets/images/logo-chrome.svg" alt="Chrome-logo">
-            </figure>
-            <h1 class="text-lg font-bold mt-8">Add to Chrome</h1>
-            <h2 class="tertiary-text text-center ">Minimum version 62</h2>
-            <figure class="dots my-6">
-                <img src="../src/assets/images/bg-dots.svg" alt="dots">
-            </figure>
-            <button class="basic-button">Add & Install Extension</button>
-        </article>
+            <article class="add-extension article-commons flex flex-col items-center sm:mt-0 " id="add-1">
+                <figure class="browser">
+                    <img src="../src/assets/images/logo-chrome.svg" alt="Chrome-logo">
+                </figure>
+                <h1 class="text-lg font-bold mt-8">Add to Chrome</h1>
+                <h2 class="tertiary-text text-center ">Minimum version 62</h2>
+                <figure class="dots my-6">
+                    <img src="../src/assets/images/bg-dots.svg" alt="dots">
+                </figure>
+                <button class="basic-button items-center">Add & Install Extension</button>
+            </article>
 
-        <article class="add-extension article-commons items-center justify-center" id="add-2">
-            <figure class="browser">
-                <img src="../src/assets/images/logo-firefox.svg" alt="Firefox-logo">
+            <article class="add-extension article-commons flex flex-col items-center sm:mt-8" id="add-2">
+                <figure class="browser">
+                    <img src="../src/assets/images/logo-firefox.svg" alt="Firefox-logo">
+                </figure>
+                <h1 class="text-lg font-bold mt-8">Add to Firefox</h1>
+                <h2 class="tertiary-text text-center ">Minimum version 55</h2>
+                <figure class="dots my-6 ">
+                    <img src="../src/assets/images/bg-dots.svg" alt="dots">
+                </figure>
+                <button class="basic-button">Add & Install Extension</button>
+            </article>
 
-            </figure>
-            <h1 class="text-lg font-bold mt-8">Add to Firefox</h1>
-            <h2 class="tertiary-text text-center ">Minimum version 55</h2>
-            <figure class="dots my-6 ">
-                <img src="../src/assets/images/bg-dots.svg" alt="dots">
-            </figure>
-            <button class="basic-button">Add & Install Extension</button>
-        </article>
-
-        <article class="add-extension article-commons items-center justify-center" id="add-3">
-            <figure class="browser">
-                <img src="../src/assets/images/logo-opera.svg" alt="Opera-logo">
-            </figure>
-            <h1 class="text-lg font-bold mt-8">Add to Opera</h1>
-            <h2 class="tertiary-text text-center ">Minimum version 46</h2>
-            <figure class="dots my-6">
-                <img src="../src/assets/images/bg-dots.svg" alt="dots">
-            </figure>
-            <button class="basic-button">Add & Install Extension</button>
-        </article>
+            <article class="add-extension article-commons flex flex-col items-center sm:mt-16" id="add-3">
+                <figure class="browser">
+                    <img src="../src/assets/images/logo-opera.svg" alt="Opera-logo">
+                </figure>
+                <h1 class="text-lg font-bold mt-8">Add to Opera</h1>
+                <h2 class="tertiary-text text-center ">Minimum version 46</h2>
+                <figure class="dots my-6">
+                    <img src="../src/assets/images/bg-dots.svg" alt="dots">
+                </figure>
+                <button class="basic-button">Add & Install Extension</button>
+            </article>
+        </div>
         </section>
 
         <section id="faqs" class="items-center justify-center w-full flex flex-col">
             
-            <hgroup id="hgroup4" class="w-2/3 my-8 flex-col
+            <hgroup id="hgroup4" class="w-1/2 my-8 flex-col
                 xs:text-center
-                sm:text-center sm:w-full
-                md:text-center">
-                <h1 class="primary-text">Frequently Asked Questions</h1>
+                sm:text-center sm:w-1/2
+                md:text-center ">
+                <h1 class="primary-text mb-8">Frequently Asked Questions</h1>
                 <h3 class="tertiary-text">
                     Here are some of our FAQs. If you have any
                     other questions you’d like answered please
@@ -262,7 +262,7 @@
         
         <details class="w-2/3 border-b border-gray-300
                 sm:w-1/2">
-            <summary class="questions list-none accordion-arrow my-4 text-sm font-bold text-text-gray">What is Bookmark?</summary>
+            <summary class="questions list-none accordion-arrow my-4 text-sm font-bold text-text-gray hover:text-accent">What is Bookmark?</summary>
                 <p class="pharagrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Nisi perspiciatis eos dolorum ipsum vel aliquid, 
                     cumque consequuntur quaerat repudiandae amet voluptates 
@@ -271,17 +271,7 @@
         </details>
         <details class="w-2/3 border-b border-gray-300
                 sm:w-1/2">
-            <summary class="questions list-none accordion-arrow my-4 text-sm font-bold text-text-gray">How can I request a new browser?</summary>
-                <p class="pharagrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Nisi perspiciatis eos dolorum ipsum vel aliquid, 
-                    cumque consequuntur quaerat repudiandae amet voluptates 
-                    ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
-                </p>
-        </details>
-        <details class="w-2/3 border-b border-gray-300
-                sm:w-1/2">
-  
-            <summary class="questions list-none accordion-arrow my-4 text-sm font-bold text-text-gray">Is there a mobile app?</summary>
+            <summary class="questions list-none accordion-arrow my-4 text-sm font-bold text-text-gray hover:text-accent">How can I request a new browser?</summary>
                 <p class="pharagrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Nisi perspiciatis eos dolorum ipsum vel aliquid, 
                     cumque consequuntur quaerat repudiandae amet voluptates 
@@ -291,24 +281,35 @@
         <details class="w-2/3 border-b border-gray-300
                 sm:w-1/2">
   
-            <summary class="questions list-none accordion-arrow my-4 text-sm font-bold text-text-gray">What about other Chromium browsers?</summary>
+            <summary class="questions list-none accordion-arrow my-4 text-sm font-bold text-text-gray hover:text-accent">Is there a mobile app?</summary>
                 <p class="pharagrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Nisi perspiciatis eos dolorum ipsum vel aliquid, 
                     cumque consequuntur quaerat repudiandae amet voluptates 
                     ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
                 </p>
         </details>
-            <button class="basic-button my-6">More Info</button>
+        <details class="w-2/3 border-b border-gray-300
+                sm:w-1/2">
+  
+            <summary class="questions list-none accordion-arrow my-4 text-sm font-bold text-text-gray hover:text-accent">What about other Chromium browsers?</summary>
+                <p class="pharagrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nisi perspiciatis eos dolorum ipsum vel aliquid, 
+                    cumque consequuntur quaerat repudiandae amet voluptates 
+                    ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
+                </p>
+        </details>
+            <button class="basic-button my-10">More Info</button>
         </section>
 
-        <section id="contact-us" class="bg-primary items-center justify-center w-full flex flex-col pt-10 pb-4">
-            <hgroup id="hgroup5" class="text-center w-2/3">
+        <section id="contact-us" class="bg-primary items-center justify-center w-full flex flex-col pt-10 pb-16">
+            <hgroup id="hgroup5" class="text-center w-2/3 sm:w-2/5">
                 <h4 class="text-white text-base tracking-widest">35,000+ already joined</h4>
                 <h1 class="text-white font-bold text-xl">Stay up-to-date with what we’re doing</h1>
             </hgroup>
-                <div id="form-btn" class="flex flex-col items-center">
+
+                <div id="form-btn" class="flex flex-col items-center sm:flex-row sm:gap-4">
             
-                    <form id="formulario" class="w-70 my-4 sm:w-80 md:w-96 relative">
+                    <form id="formulario" class=" w-70 mt-4 sm:w-80 relative ">
             
                         <input 
                             type="email" 
@@ -329,7 +330,7 @@
                     
                         <button 
                             id="contact-us-btn" 
-                            class="w-4/5 sm:w-80 md:w-96 mt-4 mb-8 text-sm font-semibold py-3 rounded-md bg-accent text-white shadow-none 
+                            class="w-70 sm:w-40 mt-4 text-sm font-base py-4 rounded-md bg-accent text-white 
                                 hover:bg-white hover:text-accent hover:border-2 hover:border-accent custom-btn"
                         >
                             Contact Us
@@ -346,16 +347,16 @@
         
         <nav id="footer-nav" class="mt-8 md:mt-0">
             <ul class="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-8">
-                <li class="text-white uppercase font-bold tracking-widest text-sm hover:text-soft-red cursor-pointer">Features</li>
-                <li class="text-white uppercase font-bold tracking-widest text-sm hover:text-soft-red cursor-pointer">Pricing</li>
-                <li class="text-white uppercase font-bold tracking-widest text-sm hover:text-soft-red cursor-pointer">Contact</li>
+                <li class="text-white uppercase font-bold tracking-widest text-sm hover:text-accent cursor-pointer">Features</li>
+                <li class="text-white uppercase font-bold tracking-widest text-sm hover:text-accent cursor-pointer">Pricing</li>
+                <li class="text-white uppercase font-bold tracking-widest text-sm hover:text-accent cursor-pointer">Contact</li>
             </ul>
         </nav>
         
         <figure id="rrss" class="flex space-x-8 mt-8 md:mt-0">
-            <img class="icon-rrss text-white hover:text-soft-red cursor-pointer icon-hover-color" 
+            <img class="icon-rrss text-white hover:text-accent cursor-pointer icon-hover-color" 
                 src="../src/assets/images/icon-facebook.svg" alt="Facebook">
-            <img class="icon-rrss text-white hover:text-soft-red cursor-pointer icon-hover-color" 
+            <img class="icon-rrss text-white hover:text-accent cursor-pointer icon-hover-color" 
                 src="../src/assets/images/icon-twitter.svg" alt="Twitter">
         </figure>
 
