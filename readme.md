@@ -49,10 +49,10 @@ La estructura del directorio es la siguiente:
 
 ```bookmark-landing-page/
 ├── public/
-│   └── index.html          ← Ubicación real diferente
+│   └── index.html
 ├── src/
 │   ├── assets/
-│   │   ├── fonts/          ← No documentado
+│   │   ├── fonts/         
 │   │   └── images/
 │   ├── js/main.js
 │   └── styles/
