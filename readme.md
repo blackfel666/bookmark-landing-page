@@ -1,51 +1,71 @@
 # 🔖 Bookmark Landing Page
-Este proyecto es una implementación de una landing page moderna para un servicio de gestión de marcadores. Está desarrollado con un enfoque en la accesibilidad y la funcionalidad.
 
-## ✨ Características Principales
-Diseño Responsivo: Implementación completa de Media Queries para asegurar una visualización óptima en dispositivos móviles, tabletas y escritorio.
+This project is an implementation of a modern and highly modular landing page for a bookmark management service. The development focused on accessibility, functionality, and **CSS scalability** achieved through the use of **Sass**.
 
-Navegación Móvil: Menú de navegación tipo "hamburguesa" con funcionalidad de apertura y cierre (requiere el archivo main.js referenciado).
+***
 
-Estilos Modulares: Uso de clases e IDs claros para una fácil depuración y mantenimiento.
+## ✨ Key Features
 
-### 🛠️ Tecnologías Utilizadas
-Este proyecto fue construido utilizando únicamente tecnologías fundamentales de la web.
+* **SASS Architecture (7-1 Pattern):** Styles are organized into a clear, modular system, making maintenance and scaling straightforward.
+* **Responsive Design (Mobile-First):** Complete implementation of Media Queries (managed via Sass Mixins) to ensure optimal viewing on mobile, tablet, and desktop devices.
+* **Mobile Navigation:** "Hamburger" navigation menu with open and close functionality (controlled by `main.js`).
+* **Modular Styles:** Use of Sass variables (`$`) and mixins (`@mixin`) for centralized management of colors, typography, and breakpoints.
 
-HTML5: Estructura semántica del contenido, incluyendo elementos modernos como `<hgroup>`, `<figure>`, y atributos ARIA.
+***
 
-CSS3: Estilizado, diseño responsivo y la lógica completa para la funcionalidad de pestañas.
+### 🛠️ Technologies Used
 
-Git: Control de versiones del proyecto.
+This project was built using fundamental web technologies and essential pre-processing tools.
 
-### 🚀 Cómo Empezar
-Sigue estos pasos para obtener una copia local del proyecto y ejecutarla en tu máquina.
+| Technology | Purpose |
+| :--- | :--- |
+| **HTML5** | Semantic content structure, including modern elements and ARIA attributes. |
+| **SASS (SCSS)** | **CSS Preprocessor** for modular styles, nesting, variables, mixins, and complete logic for the tab feature. |
+| **JavaScript** | Controls interactive functionality, such as the mobile menu. |
+| **Git** | Project version control. |
 
-**Prerrequisitos**
-No necesitas herramientas especiales, solo un navegador web moderno (Chrome, Firefox, Edge, Safari).
+***
 
-**Instalación**
-Clona el repositorio (si está en Git) o descarga el código fuente:
+### 🚀 Getting Started
 
-**Bash**
+Follow these steps to get a local copy of the project up and running on your machine.
 
-git clone [https://github.com/blackfel666/bookmark-landing-page.git]
-Navega al directorio del proyecto:
+ghpages link = 
 
-**Bash**
+**Prerequisites**
+You will need **Node.js and npm** installed to be able to compile the Sass files.
 
-cd bookmark-landing-page
-Abre el archivo index.html en tu navegador. Puedes hacerlo directamente desde tu explorador de archivos o usando la terminal:
+**Installation**
+1.  Clone the repository or download the source code:
 
-**Bash**
+    ```bash
+    git clone [https://github.com/blackfel666/bookmark-landing-page.git](https://github.com/blackfel666/bookmark-landing-page.git)
+    cd bookmark-landing-page
+    ```
 
-start index.html 
+2.  **Compile SASS:**
+    Run the Sass compiler to convert the `.scss` files into plain CSS:
 
-**O para macOS/Linux:**
+    ```bash
+    # (Ensure Sass is installed globally: npm install -g sass)
+    sass src/styles/style.scss src/styles/style.css
+    ```
+    *(Note: You can automate this compilation using npm scripts if desired).*
 
-open index.html
+3.  Open the `index.html` file in your browser to view the result:
+    ```bash
+    # On Windows:
+    start index.html
+    
+    # Or for macOS/Linux:
+    open index.html
+    ```
 
-### 📂 Estructura del Proyecto
-La estructura del directorio es la siguiente:
+***
+
+### 📂 Project Structure
+
+The project follows a **modular and scalable structure** (similar to the **7-1 Pattern**) for style management.
 
 ```
 ├── index.html
@@ -59,38 +79,43 @@ La estructura del directorio es la siguiente:
 │   │   └── main.js
 │   │
 │   └── styles/
-│       ├── abstracts/     <-- 1. HERRAMIENTAS Y VARIABLES
-│       │   ├── _variables.scss  # Colores, tipografía y breakpoints ($)
-│       │   └── _mixins.scss     # Mixins para media queries (@mixin)
+│       ├── abstracts/     
+│       │   ├── _variables.scss  
+│       │   └── _mixins.scss     
 │       │
-│       ├── base/          <-- 2. ESTILOS BASE Y GLOBALES
-│       │   ├── _reset.scss      # Estilos para *, body, y reseteo
-│       │   └── _typography.scss # Estilos para h1, h2, h3, p, y reglas @font-face
+│       ├── base/          
+│       │   ├── _reset.scss      
+│       │   └── _typography.scss 
 │       │
-│       ├── components/    <-- 3. ELEMENTOS REUTILIZABLES
-│       │   ├── _buttons.scss    # Estilos de botones base (.boton)
-│       │   └── _rrss-icons.scss # Estilos de los iconos de redes sociales (.icon-rrss)
+│       ├── components/    
+│       │   ├── _buttons.scss    
+│       │   └── _rrss-icons.scss 
 │       │
-│       ├── layout/        <-- 4. ESTRUCTURAS PRINCIPALES
-│       │   ├── _header.scss     # Estilos de <header>, nav y menú móvil
-│       │   └── _footer.scss     # Estilos de <footer> y navegación inferior
+│       ├── layout/        
+│       │   ├── _header.scss     
+│       │   └── _footer.scss     
 │       │
-│       ├── pages/         <-- 5. SECCIONES ESPECÍFICAS
-│       │   ├── _hero.scss       # Estilos de la sección principal (#simple-bookmark-manager)
-│       │   ├── _features.scss   # Estilos de #features y la lógica del carrusel CSS-Only
-│       │   ├── _faq.scss        # Estilos de la sección de preguntas (#faqs)
-│       │   └── _contact.scss    # Estilos del formulario de contacto (#contact-us)
+│       ├── pages/         
+│       │   ├── _hero.scss       
+│       │   ├── _features.scss   
+│       │   ├── _faq.scss        
+│       │   └── _contact.scss    
 │       │
-│       └── style.scss     # 📦 ARCHIVO MAESTRO: Importa todos los parciales anteriores
-│
+│       └── style.scss     
 └── README.md
 ```
 
-### ✍️ Autor
-[Blackfel666 / Yohann Velasquez] - Desarrollo Front-End
 
-### 📄 Licencia
-Este proyecto está bajo la Licencia MIT - mira el archivo LICENSE.md (si tienes uno) para detalles.
+***
 
-### 💡 Próximos Pasos / Mejoras
-Implementar Tailwind
+### ✍️ Author
+
+[Blackfel666 / Yohann Velasquez] - Front-End Development
+
+### 📄 License
+
+This project is under the **MIT License**.
+
+### 💡 Next Steps / Improvements
+
+* Implement **Tailwind** 

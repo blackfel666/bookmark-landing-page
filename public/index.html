@@ -13,45 +13,31 @@
 <body>
     <header>
             <figure class="logo-container">
-                <img class="logo" src="../src/assets/images/logo-bookmark.svg" alt="bookmark">
-            </figure>
-            <button class="open-menu" id="open1">
-                <img src="../src/assets/images/icon-hamburger.svg">
-            </button>
+                <img class="logo" src="../src/assets/images/logo-bookmark.svg" alt="Bookmark App Logo"> </figure>
+            <button class="open-menu" id="open1" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú de navegación"> <img src="../src/assets/images/icon-hamburger.svg" alt=""> </button>
             
-            <nav class="nav" id="nav"> 
-                <div class="logo-boton">
-                    <img id="menu-logo" src="../src/assets/images/logo-bookmark.svg" alt="bookmark">
-                    <button class="close-menu" id="close1"><img src="../src/assets/images/icon-close.svg"></button>
+            <nav class="nav" id="nav" aria-label="Menú principal de la página"> <div class="logo-boton">
+                    <img id="menu-logo" src="../src/assets/images/logo-bookmark.svg" alt="Bookmark App Logo"> <button class="close-menu" id="close1" aria-label="Cerrar menú de navegación"> <img src="../src/assets/images/icon-close.svg" alt=""> </button>
                 </div>
-                <ul class="nav-list">
-                    <li><a href="">FEATURES</a></li>
-                    <li><a href="">PRICING</a></li>
-                    <li><a href="">CONTACT</a></li>
+                <ul class="nav-list" role="list"> <li><a href="#features">FEATURES</a></li> <li><a href="#download-the-extension">PRICING</a></li>
+                    <li><a href="#contact-us">CONTACT</a></li>
                     <li><a href="">
                         <button class="login">LOGIN</button>
                     </a></li>    
                 </ul>
 
-                <div class="rr-ss">
-                    <button class="facebook"><img src="../src/assets/images/icon-facebook.svg"></button>
-                    <button class="twitter"><img src="../src/assets/images/icon-twitter.svg"></button>
-                </div>
+                <div class="rr-ss" role="group" aria-label="Enlaces a redes sociales"> <button class="facebook" aria-label="Enlace a Facebook"><img src="../src/assets/images/icon-facebook.svg" alt="Facebook"></button> <button class="twitter" aria-label="Enlace a Twitter"><img src="../src/assets/images/icon-twitter.svg" alt="Twitter"></button> </div>
             </nav>
 
     </header>
     <main>
 
-        <section id="simple-bookmark-manager">
-
-            <figure class="img-container">  
-                <img id="img-1" src="../src/assets/images/illustration-features-tab-1.svg">
-                <div id="forma"></div>
+        <section id="simple-bookmark-manager" aria-labelledby="hgroup1-h1"> <figure class="img-container">    
+                <img id="img-1" src="../src/assets/images/illustration-features-tab-1.svg" alt="Ejemplo de la interfaz del gestor de marcadores"> <div id="forma"></div>
             </figure>
             <div id="simple1">
                     <hgroup id="hgroup1">
-                        <h1>A Simple Bookmark Manager</h1>
-                        <h3>
+                        <h1 id="hgroup1-h1">A Simple Bookmark Manager</h1> <h3>
                             A clean and simple interface to organize 
                             your favorite websites.Open a new 
                             browser tab and see your sites load 
@@ -65,8 +51,7 @@
             </div>
             </section>
 
-        <section id="features">
-            <h1>Features</h1>
+        <section id="features" role="tablist" aria-label="Opciones de características del servicio"> <h1>Features</h1>
             <h3>
                 Our aim to make it quick and easy for you
                 to acces your favorite websites. your
@@ -74,18 +59,12 @@
                 you can acces them on the go.
             </h3>
             <hgroup>
-                <h4 data-img="0">Simple Bookmarking</h4>
-                <h4 data-img="1">Speedy Searching</h4>
-                <h4 data-img="2">Easy Sharing</h4>
-            </hgroup>
+                <h4 data-img="0" role="tab" aria-selected="true" id="tab-0" tabindex="0">Simple Bookmarking</h4> <h4 data-img="1" role="tab" aria-selected="false" id="tab-1" tabindex="-1">Speedy Searching</h4>  <h4 data-img="2" role="tab" aria-selected="false" id="tab-2" tabindex="-1">Easy Sharing</h4>       </hgroup>
             </section>
 
             <section id="bookmark-one-click">
             <figure class="img-container">
-                <img class="img-2 feature-img" data-tab="0" src="../src/assets/images/illustration-features-tab-1.svg">
-                <img class="img-2 feature-img" data-tab="1" src="../src/assets/images/illustration-features-tab-2.svg">
-                <img class="img-2 feature-img" data-tab="2" src="../src/assets/images/illustration-features-tab-3.svg">
-                <div id="forma2"></div>
+                <img class="img-2 feature-img" data-tab="0" src="../src/assets/images/illustration-features-tab-1.svg" role="tabpanel" aria-labelledby="tab-0"> <img class="img-2 feature-img" data-tab="1" src="../src/assets/images/illustration-features-tab-2.svg" role="tabpanel" aria-labelledby="tab-1" hidden> <img class="img-2 feature-img" data-tab="2" src="../src/assets/images/illustration-features-tab-3.svg" role="tabpanel" aria-labelledby="tab-2" hidden> <div id="forma2"></div>
             </figure>
             <div id="bookmark">
                 <hgroup id="hgroup2">
@@ -102,56 +81,56 @@
             
         </section>
 
-        <section id="download-the-extension">
+        <section id="download-the-extension" aria-labelledby="hgroup3-h1">
         <hgroup id="hgroup3">
-            <h1>Download the extension</h1>
+            <h1 id="hgroup3-h1">Download the extension</h1>
             <h3>
                 We’ve got more browsers in the pipeline.
                 Please let us know if you’ve got a 
                 favourite you’d like us to prioritize.
             </h3>
         </hgroup>
-        <article class="add-extension" id="add-1">
+        <article class="add-extension" id="add-1" role="region" aria-label="Extensión para Chrome">
             <figure class="browser">
-                <img src="../src/assets/images/logo-chrome.svg" alt="Chrome-logo">
+                <img src="../src/assets/images/logo-chrome.svg" alt="Logo de Chrome">
                 <figcaption>Chrome-logo</figcaption>
             </figure>
             <h1>Add to Chrome</h1>
             <h2>Minimum version 62</h2>
             <figure class="dots">
-                <img src="../src/assets/images/bg-dots.svg" alt="dots">
+                <img src="../src/assets/images/bg-dots.svg" alt="Patrón de puntos decorativo">
             </figure>
             <button class="boton">Add & Install Extension</button>
         </article>
-        <article class="add-extension" id="add-2">
+        <article class="add-extension" id="add-2" role="region" aria-label="Extensión para Firefox">
             <figure class="browser">
-                <img src="../src/assets/images/logo-firefox.svg" alt="Firefox-logo">
+                <img src="../src/assets/images/logo-firefox.svg" alt="Logo de Firefox">
                 <figcaption>Firefox-logo</figcaption>
             </figure>
             <h1>Add to Firefox</h1>
             <h2>Minimum version 55</h2>
             <figure class="dots">
-                <img src="../src/assets/images/bg-dots.svg" alt="dots">
+                <img src="../src/assets/images/bg-dots.svg" alt="Patrón de puntos decorativo">
             </figure>
             <button class="boton">Add & Install Extension</button>
         </article>
-        <article class="add-extension" id="add-3">
+        <article class="add-extension" id="add-3" role="region" aria-label="Extensión para Opera">
             <figure class="browser">
-                <img src="../src/assets/images/logo-opera.svg" alt="Opera-logo">
+                <img src="../src/assets/images/logo-opera.svg" alt="Logo de Opera">
                 <figcaption>Opera-logo</figcaption>
             </figure>
             <h1>Add to Opera</h1>
             <h2>Minimum version 46</h2>
             <figure class="dots">
-                <img src="../src/assets/images/bg-dots.svg" alt="dots">
+                <img src="../src/assets/images/bg-dots.svg" alt="Patrón de puntos decorativo">
             </figure>
             <button class="boton">Add & Install Extension</button>
         </article>
         </section>
 
-        <section id="faqs">
+        <section id="faqs" role="region" aria-labelledby="hgroup4-h1">
             <hgroup id="hgroup4">
-                <h1>Frequently Asked Questions</h1>
+                <h1 id="hgroup4-h1">Frequently Asked Questions</h1>
                 <h3>
                     Here are some of our FAQs. If you have any
                     other questions you’d like answered please
@@ -160,32 +139,28 @@
             </hgroup>
         
         <details>
-            <summary class="questions">What is Bookmark?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <summary class="questions" role="button" aria-expanded="false">What is Bookmark?</summary> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Nisi perspiciatis eos dolorum ipsum vel aliquid, 
                     cumque consequuntur quaerat repudiandae amet voluptates 
                     ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
                 </p>
         </details>
         <details>
-            <summary class="questions">How can I request a new browser?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <summary class="questions" role="button" aria-expanded="false">How can I request a new browser?</summary> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Nisi perspiciatis eos dolorum ipsum vel aliquid, 
                     cumque consequuntur quaerat repudiandae amet voluptates 
                     ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
                 </p>
         </details>
-        <details>  
-            <summary class="questions">Is there a mobile app?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <details>    
+            <summary class="questions" role="button" aria-expanded="false">Is there a mobile app?</summary> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Nisi perspiciatis eos dolorum ipsum vel aliquid, 
                     cumque consequuntur quaerat repudiandae amet voluptates 
                     ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
                 </p>
         </details>
-        <details>  
-            <summary class="questions">What about other Chromium browsers?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <details>    
+            <summary class="questions" role="button" aria-expanded="false">What about other Chromium browsers?</summary> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Nisi perspiciatis eos dolorum ipsum vel aliquid, 
                     cumque consequuntur quaerat repudiandae amet voluptates 
                     ut quisquam quidem molestiae tempora placeat facilis? Amet, veniam?
@@ -194,16 +169,13 @@
             <button class="boton">More Info</button>
         </section>
 
-        <section id="contact-us">
+        <section id="contact-us" role="region" aria-labelledby="hgroup5-h1">
         <hgroup id="hgroup5">
             <h4>35,000+ already joined</h4>
-            <h1>Stay up-to-date with what we’re doing</h1>
-        </hgroup>
+            <h1 id="hgroup5-h1">Stay up-to-date with what we’re doing</h1> </hgroup>
         <div id="form-btn">
             <form id="formulario">
-                <input type="email" id="email" name="email" placeholder="Enter your email addres" >
-                <span class="error" id="errorEmail"></span>
-            </form>
+                <label for="email" class="sr-only">Introduce tu dirección de email</label> <input type="email" id="email" name="email" placeholder="Enter your email addres" aria-required="true" aria-describedby="errorEmail"> <span class="error" id="errorEmail" aria-live="polite"></span> </form>
             <button id="contact-us-btn">Contact Us</button>
         </div>
         </section>
@@ -211,18 +183,12 @@
     </main>
 
     <footer>
-        <img id="logo" src="../src/assets/images/logo-bookmark.svg" alt="">
-        <nav id="footer-nav">
-            <ul>
-                <li>Features</li>
-                <li>Pricing</li>
-                <li>Contact</li>
+        <img id="logo" src="../src/assets/images/logo-bookmark.svg" alt="Bookmark App Logo"> <nav id="footer-nav" aria-label="Navegación de pie de página"> <ul>
+                <li><a href="#features">Features</a></li> <li><a href="#download-the-extension">Pricing</a></li>
+                <li><a href="#contact-us">Contact</a></li>
             </ul>
         </nav>
-        <figure id="rrss">
-                <img  class="icon-rrss"src="../src/assets/images/icon-facebook.svg" alt="Facebook">
-                <img class="icon-rrss" src="../src/assets/images/icon-twitter.svg" alt="Twitter">
-        </figure>
+        <figure id="rrss" role="group" aria-label="Enlaces a redes sociales"> <img class="icon-rrss" src="../src/assets/images/icon-facebook.svg" alt="Enlace a Facebook"> <img class="icon-rrss" src="../src/assets/images/icon-twitter.svg" alt="Enlace a Twitter"> </figure>
 
     </footer>
 </body>
