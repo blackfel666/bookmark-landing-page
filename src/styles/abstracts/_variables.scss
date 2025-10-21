@@ -1,0 +1,45 @@
+
+    /* Colores principales */
+    $color-primary: blue;
+    $color-accent: red;
+    
+    /* Colores de texto */
+    $color-text-white: white;
+    $color-text-gray: rgb(86, 86, 86);
+    $color-text-black: black;
+    $color-text-light-gray: rgb(184, 184, 184);
+    $color-text-medium-gray: grey;
+    
+    /* Colores de fondo */
+    $bg-dark: rgba(5, 1, 29, 0.938);
+    $bg-footer: rgb(13, 13, 45);
+    $bg-white: rgb(236, 235, 235);
+    
+    /* Colores de borde */
+    $border-white-alpha: rgba(255, 255, 255, 0.384);
+    $color-shadow-button: 0 5px 5px lightblue;
+    
+    /* Tipografía */
+    $font-primary: "puppy", sans-serif;
+
+    /* Brakepoints */
+    $bp-xs-min: 320px;
+    $bp-sm-min: 426px;
+    $bp-md-min: 769px;
+
+
+.feature-img { 
+    display: none; 
+}
+
+.feature-img.active { 
+    display: block; 
+}
+
+.img-container #forma {
+    z-index: -6;
+}
+
+ #hgroup2, #hgroup3, #hgroup4 {
+        margin-top: 0;
+    }

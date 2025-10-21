@@ -1,0 +1,38 @@
+* {font-family: $font-primary;}
+
+
+
+@include respond-to(extra-small) {
+
+    h1 {@include primary-text(75vw,center, 5%, 1.5em);}
+
+    h2 {@include secundary-text(center, none, 0.90em)}
+
+    h3 {@include tertiary-text(center, none, 0.90em)}
+
+    p { @include pharagrap()}
+
+}
+
+@include respond-to(small) {
+
+    h1 {@include primary-text(50vw,center, 5%, 1.8em);}
+
+    h2 {@include secundary-text(center, none, 1.3em)}
+
+    h3 {@include tertiary-text(left, none, 1em)}
+
+    p { @include pharagrap()}
+}
+
+@include respond-to(medium) {
+
+    h1 {@include primary-text(60vw,center, 5%, 1.8em);}
+
+    h2 {@include secundary-text(center, none, 1.5em)}
+
+    h3 {@include tertiary-text(left, none, 1em)}
+
+    p { @include pharagrap()}
+}
+

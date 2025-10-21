@@ -1,0 +1,133 @@
+@mixin respond-to($breakpoint) {
+
+    @if $breakpoint == extra-small {
+        @media only screen and (min-width: $bp-xs-min) {
+            @content;
+        }
+    } @else if $breakpoint == small {
+        @media only screen and (min-width: $bp-sm-min) {
+            @content;
+        }
+    } @else if $breakpoint == medium {
+        @media only screen and (min-width: $bp-md-min) {
+            @content;
+        }
+    } @else {
+        @warn "El breakpoint '#{$breakpoint}' no está definido en _mixins.scss.";
+    }
+}
+
+
+@mixin button-base($text-color: white, $shadow-color: lightblue) {
+    font-size: 0.70em;
+    font-weight: bold;
+    padding: 15px 15px;
+    border-radius: 5px;
+    border: 2px;
+    box-shadow: 10px;
+    color: $text-color;
+    box-shadow: $shadow-color;
+    background-color: $color-primary;
+}
+
+@mixin button-hover($bg-color, $text-color: white, $btn-border:none){
+    background-color: $bg-color;
+    color: $text-color;
+    border: $btn-border;
+}
+
+@mixin section-base($bg-color){
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: $bg-color;
+}
+
+@mixin flex-aling ($justify: flex-start, $flex-direction:column) {
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $flex-direction;
+}
+
+@mixin primary-text($width:100vw, $tx-aling, $mg-bottom, $font-size){
+    width: $width;
+    font-size: $font-size;
+    text-align: $tx-aling;
+    margin-bottom: $mg-bottom;
+}
+
+@mixin secundary-text($tx-aling, $mg-bottom, $font-size){
+    color: $color-text-light-gray;
+    font-size: $font-size;
+    text-align: $tx-aling;
+    margin-bottom: $mg-bottom;
+}
+
+@mixin tertiary-text($tx-aling, $mg-bottom, $font-size, $h3-width:90vw){ 
+    margin-top: 15px;
+    width: $h3-width;
+    color: $color-text-light-gray;
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: $font-size;
+    text-align: $tx-aling;
+    margin-bottom: $mg-bottom;
+}
+
+@mixin pharagrap(){
+    font-size: 0.70em ;
+    color: $color-text-light-gray;
+}
+
+@mixin nav-commons($top:0, $botom:0, $bg-color:black, $visibility:hidden, $shadow:0 0 0 100vmax rgba(0, 0, 0, .5)){
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: $top;
+    right: 0;
+    bottom: $botom;
+    padding: 2rem 0 0;
+    background-color: $bg-dark;
+    visibility: $visibility;
+    width: 100vw;
+    box-shadow: $shadow;
+}
+
+@mixin forma($forma-height:180px, $forma-width:80vw, $margin:20%){
+    position: absolute;
+    background-color: $color-primary;
+    height: $forma-height;
+    width: $forma-width;
+    right: 0;
+    margin-top: $margin;
+    border-radius: 100px 0 0 100px;
+    z-index: -6;
+}
+
+@mixin img-commons ($width){
+    
+    border-color: $color-text-black;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 30px;
+    background-color: $color-text-black;
+    max-width: $width;
+}
+
+@mixin img-container($margin, $box-shadow, $b-radius){
+    margin: $margin;
+    box-shadow: $box-shadow;
+    border-radius: $b-radius;
+}
+
+@mixin hgroup-commons(){
+    width: 60vw;
+    margin-right: 5%;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+}

@@ -1,0 +1,92 @@
+
+
+@include respond-to(extra-small) {
+
+
+    section {
+        @include section-base(none);
+    }
+
+    #simple-bookmark-manager, 
+    #bookmark-one-click,
+    #download-the-extension,
+    #faqs {
+        margin-bottom: 90px;
+        margin-top: 15%;
+    }
+
+    .img-container {
+        @include img-container($margin:20px 0 90px, $box-shadow:none, $b-radius:10px);
+        @include flex-aling ($justify: center);
+    }
+
+    .img-container #img-1 {@include img-commons (80vw)}
+
+    .img-container #forma {
+        @include forma($forma-height:25vh, $forma-width:80vw);
+        margin-top: none;
+    }
+
+    #hgroup1{
+        margin-bottom: 10px;
+    }
+
+    #simple-bookmark-manager .boton {
+        align-items: center;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    #simple-bookmark-manager button {
+        margin: 10px;
+    }
+
+}
+
+@include respond-to(small) {
+
+    #simple-bookmark-manager{
+        @include flex-aling (none, row-reverse);
+        padding: 0 10%;
+    }
+
+    #simple1 { @include flex-aling (flex-start, column);}
+        
+    #hgroup1 { @include hgroup-commons()}
+
+    #simple1 .boton {
+        justify-content: flex-start;
+        margin: 0;
+            
+        button {@include button-base( white, lightblue);
+            margin: 10px 20px 0 0;}
+        button:hover {@include button-hover(white, blue, thin solid blue);}
+    }
+
+    #simple1 h1, h3{
+        text-align: left;
+    }
+
+    #hgroup1 h3 {
+        width: 40vw;
+        text-align: left;
+    }
+
+
+    .img-container {
+        @include flex-aling (flex-start);
+        @include img-container(
+            $margin:10px 10px 90px 0, 
+            $box-shadow:1px 20px 30px 1px rgba(4, 4, 4, 0.267),
+            $b-radius:20px
+            );
+    }
+        
+    .img-container #forma {@include forma( 30vh, 40vw, 5%);}
+}
+
+@include respond-to(medium) {
+
+    .img-container #forma {@include forma( 30vh, 40vw, 5%);}
+}

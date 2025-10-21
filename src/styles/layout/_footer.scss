@@ -1,0 +1,83 @@
+@include respond-to(extra-small) {
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $bg-footer;
+        padding: 50px 0;
+    }
+
+    footer #logo {
+        filter: hue-rotate(180deg) invert(100%);   
+    }
+
+    #footer-nav {
+        margin-top: 30px;
+    }
+
+    #footer-nav ul li {
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-text-white;
+        list-style: none;
+        border: none;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    footer #rrss {
+        margin: 30px 0;
+    }
+
+    figure .icon-rrss {
+        padding: 20px;
+        text-decoration: none;
+    }
+
+}
+
+@include respond-to(small) {
+     footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    #footer-nav {
+        margin-top: 0;
+        width: 50vw;
+    }
+
+    #footer-nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer-nav ul li {
+        padding: 0 5px;
+        font-size: 0.7em;
+        letter-spacing: 2px;
+        width: 14vw;
+    }
+
+    .icon-rrss:hover {
+        filter: invert(42%) sepia(100%) saturate(1352%) hue-rotate(-50deg) brightness(90%) contrast(119%);
+    }
+}
+
+@include respond-to(medium) {
+
+    footer #logo {
+        filter: hue-rotate(180deg) invert(100%);   
+    }
+
+    #footer-nav ul li {
+        font-size: 0.9em; 
+    }
+    
+    #footer-nav ul li:hover {
+        color: $color-accent;
+    }
+}

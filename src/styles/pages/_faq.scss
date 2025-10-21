@@ -1,0 +1,122 @@
+@include respond-to(extra-small) {
+
+    #faqs {
+        display: flex;
+        align-items: center;
+    }
+
+    summary {
+        list-style: none;
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    summary::marker,
+    summary::-webkit-details-marker {
+        content: "";
+        display: none;
+    }
+
+    summary::after {
+        content: "";
+        margin-left: 10px; 
+        transition: transform 0.25s ease; 
+        font-weight: bold;
+        background: url(../assets/images/icon-arrow.svg) no-repeat center center;
+        background-size: contain;
+        width: 20px; 
+        height: 20px; 
+        display: inline-block;  
+        margin-left: 10px;
+    }
+
+    details[open] summary::after {
+        transform: rotate(-180deg); 
+    }
+
+    details summary {
+        list-style-type: disc;
+        font-weight: bold;
+        color: var(--color-text-gray);
+        width: 85vw;
+        padding: 20px 0;
+        border-bottom: thin solid $color-text-light-gray;
+    }
+
+    details summary.questions {
+        text-align: left;
+    }
+
+    details[open] summary.questions {
+        list-style-type: square;
+        border-bottom: 2px;
+        margin: 0 auto;
+    }   
+
+    details p {
+        text-align: left;
+        font-size: 0.9em;
+        font-weight: bold;
+        color: $color-text-light-gray;
+        line-height: 25px;
+        padding: 10px 0;
+        width: 80vw;
+    }
+
+    #faqs .boton {
+        padding: 15px 30px;
+        margin-top: 60px;
+        font-size: 1.4em;
+    }
+}
+
+@include respond-to(small) {
+
+    #hgroup4 {
+        flex-direction: column;
+        width: 70vw;
+        margin: 30px 0; 
+        text-align: center;
+    }
+    
+    details[open] summary::after {
+        filter: hue-rotate(100deg);
+    }
+
+    details summary {
+        width: 50vw;
+    }
+
+    details[open] summary.questions {
+        color: var(--color-accent);
+    }  
+
+    details p {
+        font-size: 1em;
+        width: 50vw;
+    }
+
+    #faqs .boton {
+        padding: 15px 30px;
+        margin-top: 60px;
+        font-size: 1em;
+    }
+
+}
+
+@include respond-to(medium) {
+    
+    #hgroup4 {
+        width: 50vw;
+        margin: 30px 0; 
+    }
+
+    #hgroup4 h3 {
+        width: 30vw;
+    }
+
+    details summary {
+        width: 50vw;
+    } 
+}
